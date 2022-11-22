@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Ihor Chyzh](https://up.htmlacademy.ru/adaptive/27/user/774119).
-* Наставник: `Александр Зиновьев`.
+* Наставник: [Александр Зиновьев](https://htmlacademy.ru/profile/id198751).
 
 ---
 
