@@ -32,16 +32,15 @@
       </nav>
     </header>
     <main class="main-container">
-      <h1 class="visually-hidden">Интернет-агазин "Cat energy"</h1>
       <section class="nutrition">
         <div class="nutrition__wrapper">
           <header class="nutrition__header">
-            <h2 class="nutrition__title">Функциональное питание для котов</h2>
+            <h1 class="main-container__title">Функциональное питание для котов</h1>
+            <h2 class="visually-hidden">Каталоги диет</h2>
             <p class="nutrition__slogan">Занялся собой? Займись котом!</p>
             <img class="nutrition__image" src="img/cat-pro-chiken.png" alt="Баночка с едой cat pro energy, курица, 500 грамм." width="280" height="270">
             <a class="nitrition__button button" href="form.index">подобрать программу</a>
           </header>
-          <div class="nutrition__catalogs-wrapper">
             <ul class="nutrition__catalogs-list catalogs-list">
               <li class="catalog-list__item catalogs-item catalogs-list--slim">
                 <h3 class="catalogs-item__title">Похудение</h3>
@@ -54,11 +53,9 @@
                 <a class="catalogs-item__link" href="#">каталог pro</a>
               </li>
             </ul>
-          </div>
         </div>
       </section>
       <section class="fuctionality">
-        <div class="functionality__wrapper">
           <h2 class="fuctionality__title">Как это работает</h2>
           <ul class="functionality__list">
             <li class="functionality__item functionality__item--nutrients">
@@ -74,7 +71,6 @@
               <p class="functionality__description functionality__item--date">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
             </li>
           </ul>
-        </div>
       </section>
       <article class="example">
         <div class="example__wrapper">
@@ -84,23 +80,28 @@
           <p class="example__result example__result--time">60 дней <span>затрачено времени</span></p>
           <p class="example__expense">Затраты на питание: 15 000 РУБ.</p>
           <div class="example_slider slider">
-            <img class="slider__image-fat" src="./img/slider/fat-cat@1x.png" alt="" width="280" height="256">
-            <img class="slider__image-slim" src="./img/slider/slim-cat@1x.png" alt="" width="280" height="256">
+            <img class="slider__image-fat" src="./img/slider/fat-cat@1x.png" alt="Толстый кот" width="280" height="256">
+            <svg width="40" height="258" viewBox="0 0 40 258" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <rect x="18" width="4" height="257" rx="2" fill="#666"/><rect x="1" y="110" width="38" height="38" rx="19" fill="#fff"/>
+              <path d="m16 120-8 9 8 9v-18ZM32 129l-8-9v18l8-9Z" fill="#666"/>
+              <rect x="1" y="110" width="38" height="38" rx="19" stroke="#666" stroke-width="2"/>
+            </svg>
+            <span class="visualli-hidden">Разделитель фотографий</span>
+            <img class="slider__image-slim" src="./img/slider/slim-cat@1x.png" alt="Худой кот" width="280" height="256">
           </div>
         </div>
       </article>
-      <section class="address">
-        <h2 class="visually-hidden">Адрес магазина</h2>
-        <div class="address__wrapper">
-          <p class="address__slogan">приглашаем к сотрудничеству дилеров!</p>
-          <p class="address_place">ул. Большая Конюшенная, д. 19/8
-            Санкт-Петербург</p>
-          <div class="adress__map"></div>
-        </div>
-      </section>
     </main>
     <footer class="pages-footer">
       <div class="pages-footer__wrapper">
+        <section class="address">
+          <h2 class="visually-hidden">Адрес магазина</h2>
+          <div class="address__wrapper">
+            <p class="address__slogan">приглашаем к сотрудничеству дилеров!</p>
+            <address class="address_place">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+            <div class="adress__map"></div>
+          </div>
+        </section>
         <ul class="pages-footer__list">
           <li class="pages-footer__item">
             <a class="pages-footer__logo logo" href="#">
