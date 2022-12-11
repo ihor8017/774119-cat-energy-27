@@ -1,0 +1,10 @@
+.main-container {
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
