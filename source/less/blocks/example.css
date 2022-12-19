@@ -59,3 +59,7 @@
   text-align: center;
   text-transform: uppercase;
 }
+.example__title {
+  font-size: 60px;
+  line-height: 60px;
+}

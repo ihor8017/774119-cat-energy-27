@@ -1,8 +1,14 @@
+
 .header-navigation {
+    position: relative;
     display: flex;
     width: 280px;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.header-navigation__logo-text {
+    padding-top: 13px;
 }
 
 .header-navigation__toggle {
@@ -10,5 +16,102 @@
     width: 24px;
     height: 18px;
     background-color: #FFFFFF;
-    background-image: url("/img/burger-button.svg");
+    background-image: url("img/burger-button.svg");
+}
+
+.header_navigation__list {
+    position: absolute;
+    width: 320px;
+    margin: 0;
+    padding: 0;
+    top: 54px;
+    left: -20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    list-style: none;
+    background-color: #FFFFFF;
+}
+
+.header-navigation__item {
+    min-width: 320px;
+    margin-left: 35px;
+    padding-top: 22px;
+    padding-bottom: 24px;
+    border-top: 1px solid #E6E6E6;
+    text-align: center;
+}
+
+.header-navigation__link {
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    
+}
+
+@media (min-width: @tablet-width) {
+
+    .header-navigation {
+        width: 708px;
+        justify-content: unset;
+    }
+
+    .header-navigation__toggle {
+        display: none;
+    }
+
+    .header_navigation__list {
+        position: relative;
+        min-width: 500px;
+        top: 0;
+        left: 0;
+        margin-left: auto;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background: none;
+    }
+
+    .header-navigation__item {
+        border: none;
+        min-width: 65px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .header-navigation__link {
+        padding-bottom: 10px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+
+    }
+
+    .header-navigation__link--current {
+        border-bottom: 2px solid #68B738;
+    }
+
+    .header-navigation__logo-image {
+        margin-right: 12px;
+    }
+
+    @media (min-width: @desktop-width) {
+
+        .header-navigation {
+            width: 1220px;    
+        }
+
+        .header_navigation__list {
+            min-width: 800px;
+        }
+
+        .header-navigation__link {
+            padding-bottom: 10px;
+            font-size: 20px;
+            line-height: 30px;
+    
+        }
+    }
 }

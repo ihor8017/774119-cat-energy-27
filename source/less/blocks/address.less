@@ -24,3 +24,70 @@
     line-height: 20px;
     color: #444444;
 }
+
+@media (min-width: @tablet-width) {
+
+    .address__wrapper {
+        padding: 56px 70px;
+        justify-content: space-between;
+    }
+
+    .address__slogan {
+        width: min-content;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .address__place {
+        width: min-content;
+        min-width: 160px;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: right;
+    }
+
+    .adress__divider {
+        display: block;
+    }
+
+    .adress__divider:last-child {
+        padding-top: 12px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .address {
+        position: relative;
+    }
+
+    .address__wrapper {
+        position: absolute;
+        width: 565px;
+        box-sizing: border-box;
+        top: 95px;
+        left: 110px;
+        padding: 56px 80px;
+        justify-content: start;
+        background-color: #FFFFFF;
+
+    }
+
+    .address__slogan {
+        margin-right: 87px;
+    }
+
+    .address__place {
+        width: min-content;
+        text-align: left;
+    }
+
+    .adress__divider:last-child {
+        padding-top: 0;
+        padding-right: 40px;
+    }
+
+    .address__map {
+        width: 100%;
+        height: 400px;
+    }
+}

@@ -16,4 +16,38 @@
     font-size: 16px;
     line-height: 16px;
     text-align: left;
+    text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+
+    .catalogs-item__title {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .catalogs-item__description {
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+    }
+
+    .catalogs-item__link {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .catalogs-item {
+        width: 570px;
+        box-sizing: border-box;
+        padding-left: 52px;
+        padding-right: 60px;
+    }
+
+    .catalogs-item__title {
+        margin-left: 162px;
+    }
+
 }

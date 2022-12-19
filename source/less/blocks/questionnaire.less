@@ -17,4 +17,31 @@
     width: 280px;
 }
 
+@media (min-width: @tablet-width) {
+    .questionnaire__wrapper {
+        padding-left: 70px;
+    }
+
+    .questionnaire__description {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .questionnaire__form {
+        width: 631px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .questionnaire__wrapper {
+        padding-left: 110px;
+    }
+    .questionnaire__form {
+        display: grid;
+        grid-template-columns: 570px 570px;
+        column-gap: 80px;
+        width: 1220px;
+    }
+}
 
