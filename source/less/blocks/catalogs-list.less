@@ -1,9 +1,20 @@
 .catalogs-list {
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
+
 }
 
-.catalog-list__item {
+.catalogs-list__item {
     background-color: #F2F2F2;
 }
 
+@media (min-width: @desktop-width) {
+    .catalogs-list--pro {
+        margin-left: auto;
+    }
+
+    .catalogs-list {
+        margin-bottom: 71px;
+    }
+}

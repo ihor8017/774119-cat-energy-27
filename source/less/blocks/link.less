@@ -1,4 +1,15 @@
 .link {
     text-decoration: none;
-    color: #000000;   
+    color: #000000;
+}
+
+@media (min-width: @desktop-width) {
+    .link.link--colored {
+        color: #FFFFFF;
+    }
+    
+    .link.link--current-colored {
+        color: #FFFFFF;
+        border-bottom: 2px solid #FFFFFF;
+    }
 }

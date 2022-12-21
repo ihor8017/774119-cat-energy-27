@@ -2,6 +2,6 @@
   display: flex;
   flex-wrap: wrap;
 }
-.catalog-list__item {
+.catalogs-list__item {
   background-color: #F2F2F2;
 }

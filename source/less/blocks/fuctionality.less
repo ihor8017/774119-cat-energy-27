@@ -55,3 +55,55 @@
 .functionality__item--margin {
     margin-bottom: 20px;
 }
+
+@media (min-width: @tablet-width) {
+    .fuctionality {
+        padding: 0 30px 10px;
+        border-bottom: 1px solid #E6E6E6;;
+    }
+
+    .fuctionality__title {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .functionality__list {
+        display: grid;
+        grid-template-columns: 230px 230px;
+        row-gap: 37px;
+        column-gap: 153px;
+    }
+
+    .functionality__item {
+        width: 230px;
+        padding-top: 151px;
+        padding-bottom: 57px;
+    }
+
+
+    .functionality__description {
+        padding: 0;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .functionality__description::before {
+        top: 40px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .fuctionality {
+        padding: 0 110px 0;
+        border: none;
+    }
+
+    .functionality__list {
+        grid-template-columns: 245px 245px 245px 245px;
+        column-gap: 80px;
+    }
+
+    .fuctionality__title {
+        margin-bottom: 72px;
+    }
+}
