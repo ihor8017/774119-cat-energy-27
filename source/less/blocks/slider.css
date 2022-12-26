@@ -1,5 +1,22 @@
+.slider {
+  position: relative;
+}
+.slider__image-fat {
+  display: block;
+  width: 140px;
+}
+.slider__image-slim {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 140px;
+  object-fit: contain;
+}
 .slider__divider {
-  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 120px;
   border: none;
   background: transparent;
+  z-index: 1;
 }
