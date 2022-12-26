@@ -1,16 +1,50 @@
 .catalogs-item {
+    position: relative;
     margin-bottom: 20px;
     padding: 20px;
     background-color: #F2F2F2;
 }
+
+.catalogs-item::before {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 35px;
+    background-color: #68B738;
+    border-radius: 50%;
+    content: "";
+}
+
+.catalogs-item::after {
+    position: absolute;
+    width: 67px;
+    height: 65px;
+    top: 28px;
+    left: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.catalogs-item--slim::after {
+    background-image: url(../img/cat-seating.svg);
+}
+
+.catalogs-item--pro::after {
+    background-image: url(../img/cat-walking.svg);
+}
+
 .catalogs-item__title {
     font-family: 'Oswald';
     font-style: normal;
     font-size: 24px;
     line-height: 37px;
+    margin-left: 90px;
+    text-transform: uppercase;
 }
 
 .catalogs-item__link {
+    position: relative;
     font-family: 'Oswald';
     font-style: normal;
     font-size: 16px;
@@ -19,14 +53,59 @@
     text-transform: uppercase;
 }
 
+.catalogs-item__link::after {
+    position: absolute;
+    top: 7px;
+    right: -39px;
+    width: 24px;
+    height: 12px;
+    background: url(../img/arrow.svg) no-repeat center;
+    content: "";
+}
+
 @media (min-width: @tablet-width) {
+    .catalogs-item {
+        padding-right: 316px;
+        padding-left: 52px;
+        padding-bottom: 57px;
+    }
+
+    .catalogs-item::before {
+        width: 200px;
+        height: 200px;
+        top: 72px;
+        right: 62px;
+    }
+    
+    .catalogs-item--slim::after {
+        top: 61px;
+        left: 476px;
+        width: 140px;
+        height: 194px;
+        background-size: 140px 194px;
+        background-image: url(../img/cat-seating.svg);
+    }
+    
+    .catalogs-item--pro::after {
+        top: 115px;
+        left: 412px;
+        width: 268px;
+        height: 112.3px;
+        background-size: 268px 112.3px;
+        background-image: url(../img/cat-walking.svg);
+    }
+    
 
     .catalogs-item__title {
+        margin-bottom: 24px;
+        margin-left: 0;
         font-size: 36px;
         line-height: 36px;
+        
     }
 
     .catalogs-item__description {
+        margin-bottom: 52px;
         font-size: 16px;
         line-height: 24px;
         color: #000000;
@@ -35,6 +114,10 @@
     .catalogs-item__link {
         font-size: 20px;
         line-height: 30px;
+    }
+
+    .catalogs-item__link::after {
+        top: 9px;
     }
 }
 
@@ -46,7 +129,37 @@
         padding-right: 60px;
     }
 
+    .catalogs-item::before {
+        width: 100px;
+        height: 100px;
+        top: 27px;
+        left: 52px;
+    }
+    
+    .catalogs-item--slim::after {
+        top: 21px;
+        left: 67px;
+        width: 70px;
+        height: 97px;
+        background-size: 70px 97px;
+        background-image: url(../img/cat-seating.svg);
+    }
+    
+    .catalogs-item--pro::after {
+        top: 47px;
+        left: 33px;
+        width: 134px;
+        height: 56.1px;
+        background-size: 134px 56.1px;
+        background-image: url(../img/cat-walking.svg);
+    }
+
+    .catalogs-item--slim {
+        margin-right: 80px;
+    }
+
     .catalogs-item__title {
         margin-left: 162px;
+        margin-bottom: 73px;
     }
 }

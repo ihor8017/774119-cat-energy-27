@@ -6,9 +6,33 @@
 }
 
 .field-group__item {
+    position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 14px;
+}
+.field-group__item--email::after {
+    position: absolute;
+    top: 16.5px;
+    right: 16.5px;
+    width: 17px;
+    height: 13px;
+    background-image: url("../img/forms-icons/email.svg");
+    background-position: center;
+    content: "";
+    pointer-events: none;
+}
+
+.field-group__item--phone::after {
+    position: absolute;
+    top: 15.2px;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/forms-icons/tel.svg");
+    background-position: center;
+    content: "";
+    pointer-events: none;
 }
 
 .field-group__title {
@@ -46,10 +70,14 @@
         column-gap: 64px;
     }
 
-    .questionnaire__button-wrapper {
-        display: grid;
-        grid-template-columns: 283px 283px;
-        column-gap: 64px;
+    .field-group__item--email::after {
+        top: 19.5px;
+        right: 19.5px;
+    }
+
+    .field-group__item--phone::after {
+        top: 18.5px;
+        right: 19.5px;
     }
 }
 @media (min-width: @desktop-width) {
@@ -69,11 +97,6 @@
 
     .field-group--add-info {
         grid-column-end: span 2;
-    }
-    .questionnaire__button-wrapper {
-        grid-column-end: span 2;
-        grid-template-columns: 570px 570px;
-        column-gap: 80px;
     }
 
     .field-group__wrapper {

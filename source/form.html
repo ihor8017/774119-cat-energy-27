@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <nav class="header-navigation">
+      <nav class="header-navigation header-navigation--closed">
         <a class="header-navigation__logo" href="index.html">
           <img class="header-navigation__logo-image" src="img/logo/logo-mobile.svg" alt="Логотип сайта." width="33" height="37">
         </a>
@@ -56,17 +56,17 @@
               <legend class="field-group__title visually-hidden">Тип программы</legend>
               <div class="field-group__wrapper--radio">
                 <label class="field-group__item control">
-                  <input class="field-group__input visually-hidden" type="radio" name="programm" value="slim" checked>
+                  <input class="field-group__input visually-hidden control__input" type="radio" name="programm" value="slim" checked>
                   <span class="control__mark"></span>
                   <span class="field-group__text control__lable">похудение</span>
                 </label>
                 <label class="field-group__item control">
-                  <input class="field-group__input visually-hidden" type="radio" name="programm" value="pro">
+                  <input class="field-group__input visually-hidden control__input" type="radio" name="programm" value="pro">
                   <span class="control__mark"></span>
                   <span class="field-group__text control__lable">Набор массы</span>
                 </label>
                 <label class="field-group__item control">
-                  <input class="field-group__input visually-hidden" type="radio" name="programm" value="unknown">
+                  <input class="field-group__input visually-hidden control__input" type="radio" name="programm" value="unknown">
                   <span class="control__mark"></span>
                   <span class="field-group__text control__lable">Не знаю (Нужен ваш совет)</span>
                 </label>
@@ -74,13 +74,13 @@
             </fieldset>
             <fieldset class="questionnaire__data-cat field-group field-group--contacts">
               <legend class="field-group__title">Контактные данные (владельца кота)</legend>
-              <label class="field-group__item">
+              <label class="field-group__item field-group__item--email">
                 <span class="field-group__text">E-mail:*</span>
-                <input class="field-group__input input input--email" type="email" name="email" value="kuklachev@gmail.com" required>
+                <input class="field-group__input input" type="email" name="email" value="kuklachev@gmail.com" required>
               </label>
-              <label class="field-group__item">
+              <label class="field-group__item field-group__item--phone">
                 <span class="field-group__text">Телефон:*</span>
-                <input class="field-group__input input input--phone" type="tel" name="phone" value="8 (960) 900-60-90" required>
+                <input class="field-group__input input" type="tel" name="phone" value="8 (960) 900-60-90" required>
               </label>
             </fieldset>
             <fieldset class="questionnaire__data-cat field-group field-group--comments">
@@ -93,22 +93,22 @@
               <legend class="field-group__title">Дополнительно</legend>
               <div class="field-group__wrapper">
                 <label class="field-group__item control">
-                  <input class="field-group__input visually-hidden" type="checkbox" name="additionally" value="sweetener" checked>
+                  <input class="field-group__input visually-hidden control__input" type="checkbox" name="additionally" value="sweetener" checked>
                   <span class="control__mark"></span>
                   <span class="field-group__text control__lable">сахарозаменитель</span>
                 </label>
                 <label class="field-group__item control">
-                  <input class="field-group__input visually-hidden" type="checkbox" name="additionally" value="water">
+                  <input class="field-group__input visually-hidden control__input" type="checkbox" name="additionally" value="water">
                   <span class="control__mark"></span>
                   <span class="field-group__text control__lable">питьевая вода</span>
                 </label>
                 <label class="field-group__item control">
-                  <input class="field-group__input visually-hidden" type="checkbox" name="additionally" value="milk">
+                  <input class="field-group__input visually-hidden control__input" type="checkbox" name="additionally" value="milk">
                   <span class="control__mark"></span>
                   <span class="field-group__text control__lable">молоко</span>
                 </label>
                 <label class="field-group__item control">
-                  <input class="field-group__item visually-hidden" type="checkbox" name="additionally" value="vitamins">
+                  <input class="field-group__input visually-hidden control__input" type="checkbox" name="additionally" value="milk">
                   <span class="control__mark"></span>
                   <span class="field-group__text control__lable">витамины</span>
                 </label>
@@ -130,7 +130,7 @@
           <address class="address__place">ул. Большая <span class="address__divider">Конюшенная, д. 19/8 </span><span class="adress__divider">Санкт-Петербург</span></address>
         </div>
         <div class="address__map">
-          <img src="img/map.jpg" alt="местоположение магазина на карте" width="320" height="362">
+          <span class="visually-hidden">местоположение магазина на карте</span>
         </div>
       </section>
       <div class="footer-items">
