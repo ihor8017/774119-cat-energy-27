@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header main-header--background">
@@ -32,7 +34,11 @@
       </nav>
       <h1 class="main-header__title">Функциональное <span class="main-header__divider">питание для котов</span></h1>
       <p class="main-header__slogan">Занялся собой? Займись котом!</p>
-      <img class="main-header__image" src="img/cat-pro-chiken.png" alt="Баночка с  едой cat pro energy, курица, 500 грамм." width="280" height="270">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/header/index-cat-dekstop@1x.png 1x, img/header/index-cat-dekstop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/header/index-cat-tablet@1x.png 1x, img/header/index-cat-tablet@2x.png 2x">
+        <img class="main-header__image" src="img/header/index-cat-mobile@1x.png" srcset="img/header/index-cat-mobile@2x.png 2x" alt="Баночка с  едой cat pro energy, курица, 500 грамм." width="280" height="270">
+      </picture>
       <a class="main-header__button button" href="form.html">подобрать программу</a>
     </header>
     <main class="main-container">
@@ -80,12 +86,18 @@
           </div>
           <p class="example__expense">Затраты на питание: <span class="example__expense-divider">15 000 РУБ.</span> </p>
           <div class="example_slider slider">
-            <img class="slider__image-fat" src="img/slider/fat-cat@1x.png" alt="Толстый кот" width="280" height="256">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/slider/fat-cat-tablet@1x.png 1x, img/slider/fat-cat-tablet@2x.png 2x">
+              <img class="slider__image-fat" src="img/slider/fat-cat-mobile@1x.png" srcset="img/slider/fat-cat-mobile@2x.png 2x" alt="Толстый кот" width="280" height="256">
+            </picture>
             <button class="slider__divider" type="button">
-              <img class="slider__divider-image" src="img/slider/bar.svg" alt="" width="40" height="256">
+              <img class="slider__divider-image" src="img/slider/bar.svg" alt="" width="280" height="256">
             </button>
             <span class="visualli-hidden">Разделитель фотографий</span>
-            <img class="slider__image-slim" src="img/slider/slim-cat@1x.png" alt="Худой кот" width="280" height="256">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/slider/slim-cat-tablet@1x.png 1x, img/slider/slim-cat-tablet@2x.png 2x">
+              <img class="slider__image-slim" src="img/slider/slim-cat-mobile@1x.png" srcset="img/slider/slim-cat-mobile@2x.png 2x" alt="Худой кот" width="280" height="256">
+            </picture>
           </div>
         </div>
       </article>

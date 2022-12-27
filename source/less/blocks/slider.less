@@ -12,14 +12,27 @@
     top: 0;
     right: 0;
     width: 140px;
-    object-fit: contain;
 }
 
 .slider__divider {
     position: absolute;
     top: 0;
-    left: 120px;
+    left: 0px;
     border: none;
     background: transparent;
     z-index: 1;
+}
+
+@media (min-width: @tablet-width) {
+    .slider__image-fat {
+        height: 512px;
+    }
+
+    .slider__image-slim {
+        height: 512px;
+    }
+
+    .slider__divider-image {
+        height: 512px;
+    }
 }
