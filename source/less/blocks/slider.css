@@ -10,12 +10,11 @@
   top: 0;
   right: 0;
   width: 140px;
-  object-fit: contain;
 }
 .slider__divider {
   position: absolute;
   top: 0;
-  left: 120px;
+  left: 0px;
   border: none;
   background: transparent;
   z-index: 1;

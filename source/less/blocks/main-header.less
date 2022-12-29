@@ -8,9 +8,16 @@
 
 .main-header--background {
     position: relative;
-    background-image: url("/img/background-cat.jpg");
+    background-image: url("../img/background/background-header-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position-y: 65px;
+}
+
+@media (min-resolution: 2dppx) {
+    .main-header--background {
+        background-image: url("../img/background/background-header-mobile@2x.jpg");
+        background-size: 320px auto;
+    }
 }
 
 .main-header--background::before {
@@ -89,6 +96,19 @@
     .main-header {
         width: @desktop-width;
         padding: 55px 110px 0;
+    }
+
+    .main-header--background {
+        background-image: url("/img/background/background-header-desktop@1x.jpg");
+        background-repeat: no-repeat;
+        background-position-x: 720px;
+    }
+
+    @media (min-resolution: 2dppx) {
+        .main-header--background {
+            background-image: url("/img/background/background-header-desktop@2x.jpg");
+            background-size: 720px auto;
+        }
     }
 
     .main-header--background::before {
