@@ -11,7 +11,7 @@
   <body class="page__body">
     <header class="main-header main-header--background">
       <nav class="header-navigation header-navigation--closed">
-        <a class="header-navigation__logo" href="index.html" aria-current="page">
+        <a class="header-navigation__logo logo" href="index.html" aria-current="page">
           <img class="header-navigation__logo-image" src="img/logo/logo-mobile.svg" alt="Логотип сайта." width="33" height="37">
         </a>
         <a class="header-navigation__logo logo" href="index.html">
@@ -86,18 +86,28 @@
           </div>
           <p class="example__expense">Затраты на питание: <span class="example__expense-divider">15 000 РУБ.</span> </p>
           <div class="example_slider slider">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/slider/fat-cat-tablet@1x.png 1x, img/slider/fat-cat-tablet@2x.png 2x">
-              <img class="slider__image-fat" src="img/slider/fat-cat-mobile@1x.png" srcset="img/slider/fat-cat-mobile@2x.png 2x" alt="Толстый кот" width="280" height="256">
-            </picture>
+            <div class="slider__image-wrapper">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/slider/fat-cat-tablet@1x.png 1x, img/slider/fat-cat-tablet@2x.png 2x">
+                <img class="slider__image-fat" src="img/slider/fat-cat-mobile@1x.png" srcset="img/slider/fat-cat-mobile@2x.png 2x" alt="Толстый кот" width="280" height="256">
+              </picture>
+            </div>
             <button class="slider__divider" type="button">
-              <img class="slider__divider-image" src="img/slider/bar.svg" alt="" width="280" height="256">
+              <svg class="slider__divider-bar" width="40" height="258"  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <rect x="18" width="4" height="257.02" rx="2" />
+                <rect x="1" y="110" width="38" height="38" rx="19" stroke-width="2"/>
+                <rect x="1" y="110" width="38" height="38" rx="19" fill="white"/>
+                <path d="M16 120L8 129L16 138V120Z" />
+                <path d="M32 129L24 120V138L32 129Z" />
+                </svg>
             </button>
-            <span class="visualli-hidden">Разделитель фотографий</span>
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/slider/slim-cat-tablet@1x.png 1x, img/slider/slim-cat-tablet@2x.png 2x">
-              <img class="slider__image-slim" src="img/slider/slim-cat-mobile@1x.png" srcset="img/slider/slim-cat-mobile@2x.png 2x" alt="Худой кот" width="280" height="256">
-            </picture>
+            <span class="visually-hidden">Разделитель фотографий</span>
+            <div class="slider__image-wrapper">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/slider/slim-cat-tablet@1x.png 1x, img/slider/slim-cat-tablet@2x.png 2x">
+                <img class="slider__image-slim" src="img/slider/slim-cat-mobile@1x.png" srcset="img/slider/slim-cat-mobile@2x.png 2x" alt="Худой кот" width="280" height="256">
+              </picture>
+            </div>
           </div>
         </div>
       </article>
@@ -121,12 +131,21 @@
         </div>
         <div class="footer-items__item footer-items__item--bordered social">
           <a class="social__item-link link" href="https://vk.com/htmlacademy">
+            <svg width="27" height="19">
+              <use xlink:href="img/sprite.svg#vkontakte"></use>
+            </svg>
             <span class="visually-hidden">Вконтакте</span>
           </a>
-          <a class="social__item-link social__item-link--youtube link" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="social__item-link link" href="https://www.youtube.com/user/htmlacademyru">
+            <svg width="24" height="19">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg>
             <span class="visually-hidden">Ютуб</span>
           </a>
           <a class="social__item-link social__item-link--telegram link" href="https://www.youtube.com/user/htmlacademyru">
+            <svg width="20" height="18">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
             <span class="visually-hidden">Телеграм</span>
           </a>
         </div>
@@ -135,7 +154,9 @@
               <span>HTML Academy</span>
             </a>
             <a class="partner__item-link logo__image link" href="https://htmlacademy.ru/">
-              <img class="logo__academia-image" src="img/partners/html-academy-image.svg" alt="Логотип HTML Academy" width="27" height="34">
+              <svg class="logo__academia-image" role="img" aria-label="Логотип HTML Academy" width="27" height="34">
+                <use xlink:href="img/sprite.svg#html-academy-image"></use>
+              </svg>
             </a>
         </div>
       </div>

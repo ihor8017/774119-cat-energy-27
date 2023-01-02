@@ -13,10 +13,28 @@
     text-decoration: none;
 }
 
-.button--light {
+.button:hover {
+    background-color: #5EAA2F;
+  }
+  
+  .button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5EAA2F;
+  }
+  
+  .button--light {
     color: #444444;
     background: #F2F2F2;
-}
+  }
+  
+  .button--light:hover {
+    background-color: #EBEBEB;
+  }
+  
+  .button--light:active {
+    color: rgba(68, 68, 68, 0.3);
+    background-color: #EBEBEB;
+  }
 
 @media (min-width: @tablet-width) {
     .button {
