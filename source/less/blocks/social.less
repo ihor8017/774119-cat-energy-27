@@ -2,11 +2,10 @@
     display: flex;
 }
 
-.social__item-link {
-    display: block;
-    margin-left: 13px;
-    margin-right: 13px;
+.social__item-link  {
+    margin: 5px 15px 0 13px;
     & svg {
+        display: block;
         color: #666666;
     }
 }
@@ -18,4 +17,10 @@
 .social__item-link:active svg {
     color: #68B738;
     opacity: 0.3;
+}
+
+@media (min-width: @desktop-width) {
+    .social {
+        justify-content: center;
+    }
 }

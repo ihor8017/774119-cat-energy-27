@@ -1,8 +1,12 @@
 .fuctionality {
-    padding: 20px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .fuctionality__title {
+    margin: 0;
+    margin-bottom: 40px;
     font-family: 'Oswald';
     font-style: normal;
     font-size: 36px;
@@ -24,15 +28,17 @@
 .functionality__description {
     margin: 0;
     padding-left: 80px;
+    padding-bottom: 6px;
 
 }
 
 .functionality__description::before {
     position: absolute;
     left: 0;
-    top: 0;
+    top: -4px;
     width: 60px;
     height: 60px;
+    background-color: #68B738;
     content: "";
 }
 
@@ -58,49 +64,53 @@
 
 @media (min-width: @tablet-width) {
     .fuctionality {
-        padding: 0 30px 10px;
+        padding: 15px 30px 26px;
         border-bottom: 1px solid #E6E6E6;;
     }
 
     .functionality__item--nutrients {
-        background-image: url("../img/functionality/1.png");
+        background-image: url("../img/functionality/background-1.png");
         background-repeat: no-repeat;
-        background-position: right bottom;
+        background-position: right 46px bottom 13px;
       }
 
       .functionality__item--powder {
         background-image: url("../img/functionality/background-2.png");
         background-repeat: no-repeat;
-        background-position: right bottom;
+        background-position: right 7px bottom 12px;
       }
 
       .functionality__item--food {
         background-image: url("../img/functionality/background-3.png");
         background-repeat: no-repeat;
-        background-position: right bottom;
+        background-position: right 7px bottom 8px;
       }
 
       .functionality__item--date {
         background-image: url("../img/functionality/background-4.png");
         background-repeat: no-repeat;
-        background-position: right bottom;
+        background-position: right -2px bottom 12px;
+        span {
+            display: block;
+        }
       }
 
     .fuctionality__title {
+        margin-bottom: 20px;
         font-size: 60px;
         line-height: 60px;
     }
 
     .functionality__list {
         display: grid;
-        grid-template-columns: 230px 230px;
-        row-gap: 37px;
-        column-gap: 153px;
+        grid-template-columns: 243px 243px;
+        column-gap: 140px;
+        row-gap: 2px;
     }
 
     .functionality__item {
-        width: 230px;
-        padding-top: 151px;
+        width: 243px;
+        padding-top: 165px;
         padding-bottom: 57px;
     }
 
@@ -113,6 +123,10 @@
 
     .functionality__description::before {
         top: 55px;
+        width: 80px;
+        height: 80px;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
 
@@ -128,6 +142,6 @@
     }
 
     .fuctionality__title {
-        margin-bottom: 72px;
+        margin-bottom: 14px;
     }
 }

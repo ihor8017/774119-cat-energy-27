@@ -16,6 +16,7 @@
 }
 
 .example__description {
+    margin: 0;
     margin-bottom: 20px;
 }
 
@@ -30,7 +31,7 @@
     width: 124px;
     margin: 0;
     padding-top: 17px;
-    padding-bottom: 17px;
+    padding-bottom: 15px;
     font-family: 'Oswald';
     font-style: normal;
     font-size: 24px;
@@ -43,7 +44,7 @@
 
 .example__result--small {
     position: absolute;
-    top: 42px;
+    top: 40px;
     right: 50%;
     transform: translateX(50%);
     width: min-content;
@@ -61,6 +62,8 @@
 }
 
 .example__expense {
+    margin: 0;
+    margin-bottom: 19px;
     font-family: 'Oswald';
     font-style: normal;
     font-size: 14px;
@@ -72,7 +75,7 @@
 @media (min-width: @tablet-width) {
     .example {
         position: relative;
-        padding: 43px 30px 100px;
+        padding: 20px 30px 100px;
         background: none;
     }
 
@@ -101,25 +104,26 @@
 
     .example__description {
         grid-column-end: span 2;
+        margin-bottom: 54px;
         font-size: 16px;
         line-height: 24px;
     }
 
     .example__result-wrapper {
         width: 366px;
-
+        margin-bottom: 104px;
     }
 
     .example__result {
         width: 162px;
-        padding-top: 20px;
+        padding-top: 12px;
         padding-bottom: 20px;
         font-size: 30px;
         line-height: 37px;
     }
 
     .example__result--small {
-        top: 58px;
+        top: 50px;
         width: max-content;
         padding: 10px;
         margin: 0;
@@ -130,6 +134,8 @@
 
     .example__expense {
         justify-self: end;
+        padding-top: 10px;
+        padding-right: 3px;
         font-size: 20px;
         line-height: 20px;
         text-align: right;
@@ -149,7 +155,7 @@
 
 @media (min-width: @desktop-width) {
     .example {
-        padding: 0 110px 75px;
+        padding: 26px 110px 55px;
     }
 
     .example__wrapper {
@@ -160,16 +166,19 @@
     .example__title {
         grid-column: 1;
         grid-row: 1;
+        padding-bottom: 147px;
     }
 
     .example__description {
         grid-column: 1;
         grid-row: 2;
+        margin-bottom: 71px;
     }
 
     .example__result-wrapper {
         grid-column: 1;
         grid-row: 3;
+        margin-bottom: 38px;
     }
 
     .example__expense {
@@ -193,7 +202,7 @@
     }
 
     .example__result--small {
-        top: 80px;
+        top: 50px;
         background-color: #F2F2F2;
     }
 

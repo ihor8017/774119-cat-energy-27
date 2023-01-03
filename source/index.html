@@ -12,7 +12,11 @@
     <header class="main-header main-header--background">
       <nav class="header-navigation header-navigation--closed">
         <a class="header-navigation__logo logo" href="index.html" aria-current="page">
-          <img class="header-navigation__logo-image" src="img/logo/logo-mobile.svg" alt="Логотип сайта." width="33" height="37">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+            <img class="header-navigation__logo-image" src="img/logo/logo-mobile.svg" alt="Логотип сайта." width="33" height="37">
+          </picture>
         </a>
         <a class="header-navigation__logo logo" href="index.html">
           <img class="header-navigation__logo-text" src="img/logo/logo-text.svg" alt="Cat energy." width="101" height="18">
@@ -72,7 +76,7 @@
               <p class="functionality__description functionality__description--food">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
             <li class="functionality__item functionality__item--margin functionality__item--date">
-              <p class="functionality__description functionality__description--date">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <p class="functionality__description functionality__description--date">Уже через месяц наслаждайтесь изменениями к лучшему <span>вашего питомца!</span></p>
             </li>
           </ul>
       </section>
@@ -93,7 +97,7 @@
               </picture>
             </div>
             <button class="slider__divider" type="button">
-              <svg class="slider__divider-bar" width="40" height="258"  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <svg class="slider__divider-bar" role="img" aria-label="ползунок разделяющий фотографии кота до и после диеты " width="40" height="258"  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <rect x="18" width="4" height="257.02" rx="2" />
                 <rect x="1" y="110" width="38" height="38" rx="19" stroke-width="2"/>
                 <rect x="1" y="110" width="38" height="38" rx="19" fill="white"/>
@@ -116,17 +120,17 @@
       <section class="address">
         <h2 class="visually-hidden">Адрес магазина</h2>
         <div class="address__wrapper">
-          <p class="address__slogan">приглашаем к сотрудничеству дилеров!</p>
+          <p class="address__slogan">приглашаем <span>к сотрудничеству</span> дилеров!</p>
           <address class="address__place">ул. Большая <span class="address__divider">Конюшенная, д. 19/8 </span><span class="adress__divider">Санкт-Петербург</span></address>
         </div>
         <div class="address__map">
           <span class="visually-hidden">местоположение магазина на карте</span>
         </div>
       </section>
-      <div class="footer-items">
+      <div class="footer-items footer-items--backgr">
         <div class="footer-items__item footer-items__item--bordered">
           <a class="footer-items__logo logo" href="#">
-            <img class="footer-items__logo-text" src="img/logo/logo-text.svg" alt="Cat energy." width="101" height="18">
+            <img class="footer-items__logo-text" src="img/logo/logo-text.svg" alt="Cat energy." width="128" height="25">
           </a>
         </div>
         <div class="footer-items__item footer-items__item--bordered social">

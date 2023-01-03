@@ -2,11 +2,10 @@
   display: flex;
 }
 .social__item-link {
-  display: block;
-  margin-left: 13px;
-  margin-right: 13px;
+  margin: 5px 15px 0 13px;
 }
 .social__item-link svg {
+  display: block;
   color: #666666;
 }
 .social__item-link:hover svg {
