@@ -12,7 +12,11 @@
   <header class=" main-header">
     <nav class="header-navigation header-navigation--closed">
       <a class="header-navigation__logo logo" href="index.html">
-        <img class="header-navigation__logo-image" src="img/logo/logo-mobile.svg" alt="Логотип сайта." width="33" height="37">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+          <img class="header-navigation__logo-image" src="img/logo/logo-mobile.svg" alt="Логотип сайта." width="33" height="37">
+        </picture>
       </a>
       <a class="header-navigation__logo logo" href="index.html">
         <img class="header-navigation__logo-text" src="img/logo/logo-text.svg" alt="Cat energy." width="101" height="18">
@@ -132,47 +136,49 @@
             <div class="catalog__item  card--add-product">
                 <button class="card__add-button" type="button"><span class="visually-hidden">добавить продукт</span></button>
                 <h3 class="card__title card__title--add-product">Показать еще 100500 товаров</h3>
-                <p class="card__info-property card__description">На самом деле вкусов гораздо больше!</p>
+                <p class="card__info-property card__description card__description--add-product">На самом деле вкусов <span>гораздо больше!</span></p>
                 <button class="card__button card__button--add-product button button--light" type="button">показать все</button>
             </div>
           </div>
       </section>
       <section class="additional-products">
           <h2 class="additional-products__title">Дополнительные товары</h2>
-          <ul class="additional-products__list">
-            <li class="additional-products__item card card--additional">
-              <h3 class="card__title card__title--additional">Сахарозаменитель</h3>
-              <p class="card__info-property card__info-property--additional"><span>1 упаковка (100 г)</span> <span>200 ₽</span></p>
-              <button class="card__button button" type="button">заказать</button>
-            </li>
-            <li class="additional-products__item card card--additional">
-              <h3 class="card__title card__title--additional">питьевая вода</h3>
-              <p class="card__info-property card__info-property--additional"><span>5 литров</span> <span>50 ₽</span></p>
-              <button class="card__button button" type="button">заказать</button>
-            </li>
-            <li class="additional-products__item card card--additional">
-              <h3 class="card__title card__title--additional">молоко</h3>
-              <p class="card__info-property card__info-property--additional"><span>1 литр</span> <span>100 ₽</span></p>
-              <button class="card__button button" type="button">заказать</button>
-            </li>
-            <li class="additional-products__item card card--additional">
-              <h3 class="card__title card__title--additional">витамины</h3>
-              <p class="card__info-property card__info-property--additional"><span>1 упаковка (30 г)</span> <span>300 ₽</span></p>
-              <button class="card__button button" type="button">заказать</button>
-            </li>
-          </ul>
-          <div class="additional-products__gift additional-products__gift--background">
-            <p class="additional-products__description">
-              <span class="additional-products__description--divider">Закажите все</span> <span class="additional-products__description--divider">и получите чехол для кота</span> в подарок!
-            </p>
+          <div class="additional-products__wrapper">
+            <ul class="additional-products__list">
+              <li class="additional-products__item card card--additional">
+                <h3 class="card__title card__title--additional">Сахарозаменитель</h3>
+                <p class="card__info-property card__info-property--additional"><span>1 упаковка (100 г)</span> <span>200 ₽</span></p>
+                <button class="card__button button" type="button">заказать</button>
+              </li>
+              <li class="additional-products__item card card--additional">
+                <h3 class="card__title card__title--additional">питьевая вода</h3>
+                <p class="card__info-property card__info-property--additional"><span>5 литров</span> <span>50 ₽</span></p>
+                <button class="card__button button" type="button">заказать</button>
+              </li>
+              <li class="additional-products__item card card--additional">
+                <h3 class="card__title card__title--additional">молоко</h3>
+                <p class="card__info-property card__info-property--additional"><span>1 литр</span> <span>100 ₽</span></p>
+                <button class="card__button button" type="button">заказать</button>
+              </li>
+              <li class="additional-products__item card card--additional">
+                <h3 class="card__title card__title--additional">витамины</h3>
+                <p class="card__info-property card__info-property--additional"><span>1 упаковка (30 г)</span> <span>300 ₽</span></p>
+                <button class="card__button button" type="button">заказать</button>
+              </li>
+            </ul>
+            <div class="additional-products__gift additional-products__gift--background">
+              <p class="additional-products__description additional-products__description-gift">
+                <span class="additional-products__description--divider">Закажите все</span> <span class="additional-products__description--divider">и получите чехол для </span>кота в подарок!
+              </p>
+            </div>
           </div>
       </section>
     </main>
     <footer class="pages-footer">
       <section class="address">
         <h2 class="visually-hidden">Адрес магазина</h2>
-        <div class="address__wrapper address__wrapper--backgr">
-          <p class="address__slogan">приглашаем к сотрудничеству дилеров!</p>
+        <div class="address__wrapper">
+          <p class="address__slogan">приглашаем <span>к сотрудничеству</span> дилеров!</p>
           <address class="address__place">ул. Большая <span class="address__divider">Конюшенная, д. 19/8 </span><span class="adress__divider">Санкт-Петербург</span></address>
         </div>
         <div class="address__map">
@@ -182,17 +188,26 @@
       <div class="footer-items footer-items--backgr">
         <div class="footer-items__item footer-items__item--bordered">
           <a class="footer-items__logo logo" href="#">
-            <img class="footer-items__logo-text" src="img/logo/logo-text.svg" alt="Cat energy." width="101" height="18">
+            <img class="footer-items__logo-text" src="img/logo/logo-text.svg" alt="Cat energy." width="128" height="25">
           </a>
         </div>
         <div class="footer-items__item footer-items__item--bordered social">
           <a class="social__item-link link" href="https://vk.com/htmlacademy">
+            <svg width="27" height="19">
+              <use xlink:href="img/sprite.svg#vkontakte"></use>
+            </svg>
             <span class="visually-hidden">Вконтакте</span>
           </a>
-          <a class="social__item-link social__item-link--youtube link" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="social__item-link link" href="https://www.youtube.com/user/htmlacademyru">
+            <svg width="24" height="19">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg>
             <span class="visually-hidden">Ютуб</span>
           </a>
           <a class="social__item-link social__item-link--telegram link" href="https://www.youtube.com/user/htmlacademyru">
+            <svg width="20" height="18">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
             <span class="visually-hidden">Телеграм</span>
           </a>
         </div>
@@ -201,7 +216,9 @@
               <span>HTML Academy</span>
             </a>
             <a class="partner__item-link logo__image link" href="https://htmlacademy.ru/">
-              <img class="logo__academia-image" src="img/partners/html-academy-image.svg" alt="Логотип HTML Academy" width="27" height="34">
+              <svg class="logo__academia-image" role="img" aria-label="Логотип HTML Academy" width="27" height="34">
+                <use xlink:href="img/sprite.svg#html-academy-image"></use>
+              </svg>
             </a>
         </div>
       </div>

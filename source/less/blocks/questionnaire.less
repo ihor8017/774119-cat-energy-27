@@ -1,20 +1,45 @@
+.questionnaire {
+    padding-top: 42px;
+}
+
 .questionnaire__wrapper {
     padding: 0 20px;
 }
 
 .questionnaire__description {
+    margin-bottom: 40px;
     font-family: 'Oswald';
     font-style: normal;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
     color: #000000;
+    span {
+        display: block;
+    }
 }
 
 .questionnaire__form {
     display: flex;
     flex-wrap: wrap;
     width: 280px;
+}
+
+.questionnaire__button-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+
+.questionnaire__button {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.qestionnaire__info {
+    margin-top: 19px;
+    margin-bottom: 30px;
+    align-self: center;
 }
 
 @media (min-width: @tablet-width) {
