@@ -55,3 +55,31 @@
 .control__input:disabled ~ .control__lable {
     opacity: 0.3;
 }
+
+@media (min-width: @tablet-width) {
+    .control__mark {
+        top: -5px;
+        left: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+    .control__input[type="radio"]:checked + .control__mark::before {
+        top: 10px;
+        left: 11px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .control__lable {
+        margin-left: 14px;
+    }
+
+    .control__input[type="checkbox"]:checked + .control__mark::before {
+        top: 8px;
+        left: 7px;
+        width: 24px;
+        height: 18.67px;
+        background-image: url("../img/check-big.svg");
+    }
+}

@@ -12,7 +12,11 @@
     <header class="main-header">
       <nav class="header-navigation header-navigation--closed">
         <a class="header-navigation__logo logo" href="index.html">
-          <img class="header-navigation__logo-image" src="img/logo/logo-mobile.svg" alt="Логотип сайта." width="33" height="37">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+            <img class="header-navigation__logo-image" src="img/logo/logo-mobile.svg" alt="Логотип сайта." width="33" height="37">
+          </picture>
         </a>
         <a class="header-navigation__logo logo" href="index.html">
           <img class="header-navigation__logo-text" src="img/logo/logo-text.svg" alt="Cat energy." width="101" height="18">
