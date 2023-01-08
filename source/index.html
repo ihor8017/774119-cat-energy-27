@@ -11,8 +11,12 @@
   <body class="page__body">
     <header class="main-header main-header--background">
       <nav class="header-navigation header-navigation--closed">
-        <a class="header-navigation__logo" href="index.html" aria-current="page">
-          <img class="header-navigation__logo-image" src="img/logo/logo-mobile.svg" alt="Логотип сайта." width="33" height="37">
+        <a class="header-navigation__logo logo" href="index.html" aria-current="page">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+            <img class="header-navigation__logo-image" src="img/logo/logo-mobile.svg" alt="Логотип сайта." width="33" height="37">
+          </picture>
         </a>
         <a class="header-navigation__logo logo" href="index.html">
           <img class="header-navigation__logo-text" src="img/logo/logo-text.svg" alt="Cat energy." width="101" height="18">
@@ -72,32 +76,42 @@
               <p class="functionality__description functionality__description--food">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
             <li class="functionality__item functionality__item--margin functionality__item--date">
-              <p class="functionality__description functionality__description--date">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <p class="functionality__description functionality__description--date">Уже через месяц наслаждайтесь изменениями к лучшему <span>вашего питомца!</span></p>
             </li>
           </ul>
       </section>
       <article class="example example--background">
         <div class="example__wrapper">
           <h2 class="example__title">Живой пример</h2>
-          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат <span>без изнуряющих тренировок! При этом он не менял своих</span> привычек и по-прежнему спит по 16 часов в день.</p>
           <div class="example__result-wrapper">
             <p class="example__result">5 кг <span class="example__result--small">снижение веса</span></p>
             <p class="example__result">60 дней <span class="example__result--small">затрачено времени</span></p>
           </div>
           <p class="example__expense">Затраты на питание: <span class="example__expense-divider">15 000 РУБ.</span> </p>
           <div class="example_slider slider">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/slider/fat-cat-tablet@1x.png 1x, img/slider/fat-cat-tablet@2x.png 2x">
-              <img class="slider__image-fat" src="img/slider/fat-cat-mobile@1x.png" srcset="img/slider/fat-cat-mobile@2x.png 2x" alt="Толстый кот" width="280" height="256">
-            </picture>
+            <div class="slider__image-wrapper">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/slider/fat-cat-tablet@1x.png 1x, img/slider/fat-cat-tablet@2x.png 2x">
+                <img class="slider__image-fat" src="img/slider/fat-cat-mobile_1x.webp" srcset="img/slider/fat-cat-mobile@2x.png 2x" alt="Толстый кот" width="280" height="256">
+              </picture>
+            </div>
             <button class="slider__divider" type="button">
-              <img class="slider__divider-image" src="img/slider/bar.svg" alt="" width="280" height="256">
+              <svg class="slider__divider-bar" role="img" aria-label="ползунок разделяющий фотографии кота до и после диеты " width="40" height="258"  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <rect x="18" width="4" height="257.02" rx="2" />
+                <rect x="1" y="110" width="38" height="38" rx="19" stroke-width="2"/>
+                <rect x="1" y="110" width="38" height="38" rx="19" fill="white"/>
+                <path d="M16 120L8 129L16 138V120Z" />
+                <path d="M32 129L24 120V138L32 129Z" />
+                </svg>
             </button>
-            <span class="visualli-hidden">Разделитель фотографий</span>
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/slider/slim-cat-tablet@1x.png 1x, img/slider/slim-cat-tablet@2x.png 2x">
-              <img class="slider__image-slim" src="img/slider/slim-cat-mobile@1x.png" srcset="img/slider/slim-cat-mobile@2x.png 2x" alt="Худой кот" width="280" height="256">
-            </picture>
+            <span class="visually-hidden">Разделитель фотографий</span>
+            <div class="slider__image-wrapper">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/slider/slim-cat-tablet@1x.png 1x, img/slider/slim-cat-tablet@2x.png 2x">
+                <img class="slider__image-slim" src="img/slider/slim-cat-mobile_1x.webp" srcset="img/slider/slim-cat-mobile@2x.png 2x" alt="Худой кот" width="280" height="256">
+              </picture>
+            </div>
           </div>
         </div>
       </article>
@@ -106,27 +120,36 @@
       <section class="address">
         <h2 class="visually-hidden">Адрес магазина</h2>
         <div class="address__wrapper">
-          <p class="address__slogan">приглашаем к сотрудничеству дилеров!</p>
+          <p class="address__slogan">приглашаем <span>к сотрудничеству</span> дилеров!</p>
           <address class="address__place">ул. Большая <span class="address__divider">Конюшенная, д. 19/8 </span><span class="adress__divider">Санкт-Петербург</span></address>
         </div>
         <div class="address__map">
           <span class="visually-hidden">местоположение магазина на карте</span>
         </div>
       </section>
-      <div class="footer-items">
+      <div class="footer-items footer-items--backgr">
         <div class="footer-items__item footer-items__item--bordered">
           <a class="footer-items__logo logo" href="#">
-            <img class="footer-items__logo-text" src="img/logo/logo-text.svg" alt="Cat energy." width="101" height="18">
+            <img class="footer-items__logo-text" src="img/logo/logo-text.svg" alt="Cat energy." width="128" height="25">
           </a>
         </div>
         <div class="footer-items__item footer-items__item--bordered social">
           <a class="social__item-link link" href="https://vk.com/htmlacademy">
+            <svg width="27" height="19">
+              <use xlink:href="img/sprite.svg#vkontakte"></use>
+            </svg>
             <span class="visually-hidden">Вконтакте</span>
           </a>
-          <a class="social__item-link social__item-link--youtube link" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="social__item-link link" href="https://www.youtube.com/user/htmlacademyru">
+            <svg width="24" height="19">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg>
             <span class="visually-hidden">Ютуб</span>
           </a>
           <a class="social__item-link social__item-link--telegram link" href="https://www.youtube.com/user/htmlacademyru">
+            <svg width="20" height="18">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
             <span class="visually-hidden">Телеграм</span>
           </a>
         </div>
@@ -135,7 +158,9 @@
               <span>HTML Academy</span>
             </a>
             <a class="partner__item-link logo__image link" href="https://htmlacademy.ru/">
-              <img class="logo__academia-image" src="img/partners/html-academy-image.svg" alt="Логотип HTML Academy" width="27" height="34">
+              <svg class="logo__academia-image" role="img" aria-label="Логотип HTML Academy" width="27" height="34">
+                <use xlink:href="img/sprite.svg#html-academy-image"></use>
+              </svg>
             </a>
         </div>
       </div>

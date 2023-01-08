@@ -2,21 +2,25 @@
     display: flex;
 }
 
-.social__item-link {
-    display: block;
-    width: 27px;
-    height: 19px;
-    margin-left: 13px;
-    margin-right: 13px;
-    background-image: url("/img/social/vkontakte.svg");
-    background-position: center;
-    background-repeat: no-repeat;
+.social__item-link  {
+    margin: 5px 15px 0 16px;
+    & svg {
+        display: block;
+        color: #666666;
+    }
 }
 
-.social__item-link--youtube {
-    background-image: url("/img/social/youtube.svg");
+.social__item-link:hover svg {
+    color: #68B738;
 }
 
-.social__item-link--telegram {
-    background-image: url("/img/social/telegram.svg");
+.social__item-link:active svg {
+    color: #68B738;
+    opacity: 0.3;
+}
+
+@media (min-width: @desktop-width) {
+    .social {
+        justify-content: center;
+    }
 }

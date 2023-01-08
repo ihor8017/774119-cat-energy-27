@@ -1,14 +1,22 @@
+.questionnaire {
+    padding-top: 42px;
+}
+
 .questionnaire__wrapper {
     padding: 0 20px;
 }
 
 .questionnaire__description {
+    margin-bottom: 40px;
     font-family: 'Oswald';
     font-style: normal;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
     color: #000000;
+    span {
+        display: block;
+    }
 }
 
 .questionnaire__form {
@@ -17,12 +25,35 @@
     width: 280px;
 }
 
+.questionnaire__button-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+
+.questionnaire__button {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.qestionnaire__info {
+    margin-top: 19px;
+    margin-bottom: 30px;
+    align-self: center;
+}
+
 @media (min-width: @tablet-width) {
+    .questionnaire {
+        padding-top: 60px;
+    }
+
     .questionnaire__wrapper {
         padding-left: 70px;
+        margin-bottom: 73px;
     }
 
     .questionnaire__description {
+        margin-bottom: 64px;
         font-size: 20px;
         line-height: 30px;
     }
@@ -35,15 +66,29 @@
     .questionnaire__button-wrapper {
         display: grid;
         grid-template-columns: 283px 283px;
-        column-gap: 64px;
+        column-gap: 61px;
+    }
+
+    .questionnaire__button {
+        font-size: 20px;
+    }
+    .qestionnaire__info {
+        margin: 0;
+        font-size: 16px;
+        line-height: 16px;
     }
 }
 
 
 @media (min-width: @desktop-width) {
+    .questionnaire {
+        padding-top: 69px;
+    }
+
     .questionnaire__wrapper {
         padding-left: 110px;
-        padding-bottom: 82px;
+        padding-bottom: 11px;
+        margin-bottom: 73px;
     }
     .questionnaire__form {
         display: grid;

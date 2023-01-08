@@ -1,8 +1,8 @@
 .control {
   position: relative;
   display: block;
-  padding-left: 45px;
-  margin-bottom: 25px;
+  padding-left: 43px;
+  margin-bottom: 23px;
 }
 .control__mark {
   position: absolute;
@@ -38,6 +38,9 @@
 }
 .control__input:hover + .control__mark {
   border-color: #BABABA;
+}
+.control__input:focus + .control__mark {
+  outline: 2px solid #444444;
 }
 .control__input:disabled + .control__mark,
 .control__input:disabled + .control__mark::before,

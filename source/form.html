@@ -11,8 +11,12 @@
   <body class="page__body">
     <header class="main-header">
       <nav class="header-navigation header-navigation--closed">
-        <a class="header-navigation__logo" href="index.html">
-          <img class="header-navigation__logo-image" src="img/logo/logo-mobile.svg" alt="Логотип сайта." width="33" height="37">
+        <a class="header-navigation__logo logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+            <img class="header-navigation__logo-image" src="img/logo/logo-mobile.svg" alt="Логотип сайта." width="33" height="37">
+          </picture>
         </a>
         <a class="header-navigation__logo logo" href="index.html">
           <img class="header-navigation__logo-text" src="img/logo/logo-text.svg" alt="Cat energy." width="101" height="18">
@@ -35,12 +39,12 @@
     </header>
     <main class="main-container">
       <section class="questionnaire">
-        <h1 class="page__title page__title--indents">Подбор программы</h1>
+        <h1 class="page__title page__title--form-indents">Подбор программы</h1>
         <div class="questionnaire__wrapper">
-          <p class="questionnaire__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <p class="questionnaire__description">Заполните анкету, и мы подберем <span>программу питания для вашего кота</span></p>
           <form class="questionnaire__form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="questionnaire__data-cat field-group">
-              <legend class="visually-hidden">Данные кота</legend>
+            <div class="questionnaire__data-cat field-group">
+              <h2 class="visually-hidden">Данные кота</h2>
               <label class="field-group__item">
                 <span class="field-group__text">ИМЯ:*</span>
                 <input class="field-group__input input" type="text" name="name" value="Барсик" required>
@@ -53,9 +57,9 @@
                 <span class="field-group__text">Возраст (лет):</span>
                 <input class="field-group__input input" type="number" name="name" value="7">
               </label>
-            </fieldset>
-            <fieldset class="questionnaire__data-cat field-group">
-              <legend class="field-group__title visually-hidden">Тип программы</legend>
+            </div>
+            <div class="questionnaire__data-cat field-group">
+              <h2 class="visually-hidden">Тип программы</h2>
               <div class="field-group__wrapper--radio">
                 <label class="field-group__item control">
                   <input class="field-group__input visually-hidden control__input" type="radio" name="programm" value="slim" checked>
@@ -73,26 +77,30 @@
                   <span class="field-group__text control__lable">Не знаю (Нужен ваш совет)</span>
                 </label>
               </div>
-            </fieldset>
-            <fieldset class="questionnaire__data-cat field-group field-group--contacts">
-              <legend class="field-group__title">Контактные данные (владельца кота)</legend>
-              <label class="field-group__item field-group__item--email">
-                <span class="field-group__text">E-mail:*</span>
-                <input class="field-group__input input" type="email" name="email" value="kuklachev@gmail.com" required>
-              </label>
-              <label class="field-group__item field-group__item--phone">
-                <span class="field-group__text">Телефон:*</span>
-                <input class="field-group__input input" type="tel" name="phone" value="8 (960) 900-60-90" required>
-              </label>
-            </fieldset>
-            <fieldset class="questionnaire__data-cat field-group field-group--comments">
-                <legend class="field-group__title">Комментарий</legend>
+            </div>
+            <div class="questionnaire__data-cat field-group field-group--contacts">
+              <h2 class="field-group__title field-group__title--line">Контактные данные <span>(владельца кота)</span></h2>
+              <div class="field-group--contacts-wrapper">
+                <label class="field-group__item">
+                  <span class="field-group__text">E-mail:*</span>
+                  <input class="field-group__input input" type="email" name="email" value="kuklachev@gmail.com" required>
+                  <span class="field-group__icon-email"></span>
+                </label>
+                <label class="field-group__item">
+                  <span class="field-group__text">Телефон:*</span>
+                  <input class="field-group__input input" type="tel" name="phone" value="8 (960) 900-60-90" required>
+                  <span class="field-group__icon-phone"></span>
+                </label>
+              </div>
+            </div>
+            <div class="questionnaire__data-cat field-group field-group--comments">
+                <h2 class="field-group__title field-group__title--line">Комментарий</h2>
                 <label class="field-group__area field-group__item">
                   <textarea class="field-group__input input input--area" name="comment">Расскажите обо всех повАдках кота</textarea>
                 </label>
-            </fieldset>
-            <fieldset class="questionnaire__data-cat field-group field-group--add-info">
-              <legend class="field-group__title">Дополнительно</legend>
+            </div>
+            <div class="questionnaire__data-cat field-group field-group--add-info">
+              <h2 class="field-group__title field-group__title--line">Дополнительно</h2>
               <div class="field-group__wrapper">
                 <label class="field-group__item control">
                   <input class="field-group__input visually-hidden control__input" type="checkbox" name="additionally" value="sweetener" checked>
@@ -115,7 +123,7 @@
                   <span class="field-group__text control__lable">витамины</span>
                 </label>
               </div>
-            </fieldset>
+            </div>
             <div class="questionnaire__button-wrapper">
               <button class="questionnaire__button button" type="submit">отправить заявку</button>
               <p class="qestionnaire__info">* — Обязательные поля</p>
@@ -127,28 +135,37 @@
     <footer class="pages-footer">
       <section class="address">
         <h2 class="visually-hidden">Адрес магазина</h2>
-        <div class="address__wrapper">
-          <p class="address__slogan">приглашаем к сотрудничеству дилеров!</p>
+        <div class="address__wrapper address__wrapper--backgr">
+          <p class="address__slogan">приглашаем <span>к сотрудничеству</span> дилеров!</p>
           <address class="address__place">ул. Большая <span class="address__divider">Конюшенная, д. 19/8 </span><span class="adress__divider">Санкт-Петербург</span></address>
         </div>
         <div class="address__map">
           <span class="visually-hidden">местоположение магазина на карте</span>
         </div>
       </section>
-      <div class="footer-items">
+      <div class="footer-items footer-items--backgr">
         <div class="footer-items__item footer-items__item--bordered">
           <a class="footer-items__logo logo" href="#">
-            <img class="footer-items__logo-text" src="img/logo/logo-text.svg" alt="Cat energy." width="101" height="18">
+            <img class="footer-items__logo-text" src="img/logo/logo-text.svg" alt="Cat energy." width="128" height="25">
           </a>
         </div>
         <div class="footer-items__item footer-items__item--bordered social">
           <a class="social__item-link link" href="https://vk.com/htmlacademy">
+            <svg width="27" height="19">
+              <use xlink:href="img/sprite.svg#vkontakte"></use>
+            </svg>
             <span class="visually-hidden">Вконтакте</span>
           </a>
-          <a class="social__item-link social__item-link--youtube link" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="social__item-link link" href="https://www.youtube.com/user/htmlacademyru">
+            <svg width="24" height="19">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg>
             <span class="visually-hidden">Ютуб</span>
           </a>
           <a class="social__item-link social__item-link--telegram link" href="https://www.youtube.com/user/htmlacademyru">
+            <svg width="20" height="18">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
             <span class="visually-hidden">Телеграм</span>
           </a>
         </div>
@@ -157,7 +174,9 @@
               <span>HTML Academy</span>
             </a>
             <a class="partner__item-link logo__image link" href="https://htmlacademy.ru/">
-              <img class="logo__academia-image" src="img/partners/html-academy-image.svg" alt="Логотип HTML Academy" width="27" height="34">
+              <svg class="logo__academia-image" role="img" aria-label="Логотип HTML Academy" width="27" height="34">
+                <use xlink:href="img/sprite.svg#html-academy-image"></use>
+              </svg>
             </a>
         </div>
       </div>

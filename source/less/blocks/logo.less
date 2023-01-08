@@ -14,10 +14,23 @@
 
 .logo__academia-image {
     display: block;
+    color: #444444;
+}
+
+.logo__image:hover .logo__academia-image {
+    color: #68B738;
+}
+
+.logo__image:active .logo__academia-image {
+    opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
     .logo__academia-image {
-        margin-left: 23px;
+        margin-left: 27px;
     }
+}
+
+@media (min-width: @desktop-width) {
+    margin-left: 30px;
 }
