@@ -1,43 +1,44 @@
 .input {
-    min-width: 130px;
-    padding: 12px 20px;
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: #444444;
-    border: 1px solid #E7E7E7;
+  min-width: 130px;
+  padding: 12px 20px;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  border: 1px solid #e7e7e7;
 }
 
 .input:hover {
-    border-color: #CDCDCD;
+  border-color: #cdcdcd;
 }
 
 .input:focus {
-    outline: 2px solid #444444;
+  outline: 2px solid #444444;
 }
+
 .input--error {
-    outline: 2px solid #FF8282;;
+  outline: 2px solid #ff8282;
 }
 
 .input--area {
-    width: 255px;
-    height: 132px;
-    resize: none;
-    padding: 8px 8px 8px 14px;
+  width: 255px;
+  height: 132px;
+  resize: none;
+  padding: 8px 8px 8px 14px;
 }
 
 @media (min-width: @tablet-width) {
-    .input {
-        padding: 11px 20px;
-        font-size: 20px;
-        line-height: 30px;
-    }
+  .input {
+    padding: 11px 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 
-    .input--area {
-        height: 155px;
-        padding-bottom: 8px;
-    }
+  .input--area {
+    height: 155px;
+    padding-bottom: 8px;
+  }
 }

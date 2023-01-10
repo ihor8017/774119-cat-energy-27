@@ -1,70 +1,68 @@
 .footer-items {
-    display: flex;
-    padding: 20px 20px;
-    justify-content: center;
-    align-items: center;
-    width: 280px;
-    flex-wrap: wrap;
+  display: flex;
+  padding: 20px 20px;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  flex-wrap: wrap;
 }
 
 .footer-items--backgr {
-    background: #F2F2F2;
+  background: #f2f2f2;
 }
 
 .footer-items__item {
-    display: flex;
-    justify-content: center;
-    width: 280px;
-    align-items: center;
-    padding-top: 19px;
-    padding-bottom: 19px;
+  display: flex;
+  justify-content: center;
+  width: 280px;
+  align-items: center;
+  padding-top: 19px;
+  padding-bottom: 19px;
 }
 
 .footer-items__item--bordered {
-    border-bottom: 1px solid #D9D9D9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .footer-items__logo-text {
-    display: block;
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
+  .footer-items {
+    width: 708px;
+    padding: 37px 30px;
+    justify-content: space-between;
+  }
 
-    .footer-items {
-        width: 708px;
-        padding: 37px 30px;
-        justify-content: space-between;
-    }
+  .footer-items__item {
+    width: min-content;
+    min-width: 25%;
+    justify-content: flex-start;
+  }
 
-    .footer-items__item {
-        width: min-content;
-        min-width: 25%;
-        justify-content: flex-start;
-    }
+  .footer-items__item--bordered {
+    border: none;
+  }
 
-    .footer-items__item--bordered {
-        border: none;
-    }
-
-    .footer-items__logo-text {
-        width: 143px;
-        height: 26px;
-    }
-
+  .footer-items__logo-text {
+    width: 143px;
+    height: 26px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-    .footer-items {
-        width: 1220px;
-        padding: 59px 110px 56px;
-    }
+  .footer-items {
+    width: 1220px;
+    padding: 59px 110px 56px;
+  }
 
-    .footer-items__item {
-        padding-top: 7px;
-    }
+  .footer-items__item {
+    padding-top: 7px;
+  }
 
-    .footer-items__logo-text {
-        width: 143px;
-        height: 39px;
-    }
+  .footer-items__logo-text {
+    width: 143px;
+    height: 39px;
+  }
 }
