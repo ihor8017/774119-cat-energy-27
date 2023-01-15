@@ -44,7 +44,7 @@ const scripts = () => {
   .pipe(browser.stream());
   }
 
-// Images 
+// Images
 
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
@@ -78,8 +78,8 @@ const svg = () => {
 export const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
   .pipe(svgo())
-  .pipe(svgstore({ 
-    inlineSvg: true 
+  .pipe(svgstore({
+    inlineSvg: true
   }))
   .pipe(rename('sprite.svg'))
   .pipe(gulp.dest('build/img'));
@@ -97,7 +97,7 @@ const copy = (done) => {
     })
     .pipe(gulp.dest('build'))
     done();
-    }  
+    }
 
 //Clean
 
