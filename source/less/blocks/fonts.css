@@ -5,7 +5,6 @@
   src: url("../fonts/lato/Lato-Regular.woff2") format("woff2");
   font-display: swap;
 }
-
 @font-face {
   font-family: "Lato";
   font-style: regular;
@@ -13,7 +12,6 @@
   src: url("../fonts/lato/Lato-Regular.woff") format("woff");
   font-display: swap;
 }
-
 @font-face {
   font-family: "Oswald";
   font-style: medium;
@@ -21,7 +19,6 @@
   src: url("../fonts/oswald/oswaldmedium.woff2") format("woff2");
   font-display: swap;
 }
-
 @font-face {
   font-family: "Oswald";
   font-style: medium;
@@ -29,7 +26,6 @@
   src: url("../fonts/oswald/oswaldmedium.woff") format("woff");
   font-display: swap;
 }
-
 @font-face {
   font-family: "Oswald";
   font-style: regular;
@@ -37,7 +33,6 @@
   src: url("../fonts/oswald/oswaldregular.woff2") format("woff2");
   font-display: swap;
 }
-
 @font-face {
   font-family: "Oswald";
   font-style: regular;

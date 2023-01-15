@@ -1,85 +1,85 @@
 .control {
-    position: relative;
-    display: block;
-    padding-left: 43px;
-    margin-bottom: 23px;
+  position: relative;
+  display: block;
+  padding-left: 43px;
+  margin-bottom: 23px;
 }
 
 .control__mark {
-    position: absolute;
-    top: -5px;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    box-sizing: border-box;
-    border: 1px solid #CDCDCD;
-    border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
 }
 
 
 .control__input[type="radio"]:checked + .control__mark::before {
-    position: absolute;
-    top: 7px;
-    left: 8px;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background-color: #68B738;
-    content: "";
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #68b738;
+  content: "";
 }
 
 .control__input[type="checkbox"] + .control__mark {
-    border-radius: 0%;
+  border-radius: 0%;
 }
 
 .control__input[type="checkbox"]:checked + .control__mark::before {
-    position: absolute;
-    top: 8px;
-    left: 7px;
-    width: 18px;
-    height: 14px;
-    background-image: url("../img/check.svg");
-    content: "";
+  position: absolute;
+  top: 8px;
+  left: 7px;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/check.svg");
+  content: "";
 }
 
 .control__input:hover + .control__mark {
-    border-color: #BABABA;
+  border-color: #bababa;
 }
 
 .control__input:focus + .control__mark {
-    outline: 2px solid #444444;
+  outline: 2px solid #444444;
 }
 
 .control__input:disabled + .control__mark,
 .control__input:disabled + .control__mark::before,
 .control__input:disabled ~ .control__lable {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
-    .control__mark {
-        top: -5px;
-        left: 0;
-        width: 40px;
-        height: 40px;
-    }
+  .control__mark {
+    top: -5px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+  }
 
-    .control__input[type="radio"]:checked + .control__mark::before {
-        top: 10px;
-        left: 11px;
-        width: 18px;
-        height: 18px;
-    }
+  .control__input[type="radio"]:checked + .control__mark::before {
+    top: 10px;
+    left: 11px;
+    width: 18px;
+    height: 18px;
+  }
 
-    .control__lable {
-        margin-left: 14px;
-    }
+  .control__lable {
+    margin-left: 14px;
+  }
 
-    .control__input[type="checkbox"]:checked + .control__mark::before {
-        top: 8px;
-        left: 7px;
-        width: 24px;
-        height: 18.67px;
-        background-image: url("../img/check-big.svg");
-    }
+  .control__input[type="checkbox"]:checked + .control__mark::before {
+    top: 8px;
+    left: 7px;
+    width: 24px;
+    height: 18.67px;
+    background-image: url("../img/check-big.svg");
+  }
 }
