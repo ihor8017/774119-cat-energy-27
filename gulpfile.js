@@ -75,7 +75,7 @@ const svg = () => {
   .pipe(gulp.dest('build/img'));
 }
 
-export const sprite = () => {
+const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
   .pipe(svgo())
   .pipe(svgstore({
@@ -130,7 +130,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
-  //gulp.watch('source/js/*.js', gulp.series(scripts));
+  gulp.watch('source/js/*.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
@@ -144,7 +144,7 @@ export const build = gulp.series(
   gulp.parallel(
   styles,
   html,
-  //scripts,
+  scripts,
   sprite,
   createWebp
 ));
@@ -157,7 +157,7 @@ export default gulp.series(
   gulp.parallel(
   styles,
   html,
-  //scripts,
+  scripts,
   sprite,
   createWebp
   ),
