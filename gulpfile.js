@@ -5,6 +5,7 @@ import postcss from 'gulp-postcss';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
+import jsmin from 'gulp-jsmin';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import {deleteAsync} from 'del';
@@ -38,8 +39,10 @@ const html = () => {
 
 // Scripts
 
-const scripts = () => {
+export const scripts = () => {
   return gulp.src('source/js/script.js')
+  .pipe(jsmin())
+  .pipe(rename('script.min.js'))
   .pipe(gulp.dest('build/js'))
   .pipe(browser.stream());
   }
