@@ -1,0 +1,7 @@
+<svg class="slider__divider-bar" role="img" aria-label="ползунок разделяющий фотографии кота до и после диеты " width="40" height="258"  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <rect x="18" width="4" height="257.02" rx="2"/>
+  <rect x="1" y="110" width="38" height="38" rx="19" stroke-width="2"/>
+  <rect x="1" y="110" width="38" height="38" rx="19" fill="white"/>
+  <path d="M16 120L8 129L16 138V120Z"/>
+  <path d="M32 129L24 120V138L32 129Z"/>
+</svg>

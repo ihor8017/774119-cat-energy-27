@@ -42,12 +42,20 @@
   content: "";
 }
 
-.control__input:hover + .control__mark {
+.control__mark:hover {
   border-color: #bababa;
 }
 
 .control__input:focus + .control__mark {
   outline: 2px solid #444444;
+}
+
+.control__mark:active {
+  opacity: 0.6;
+}
+
+.control__input:focus {
+  outline: none;
 }
 
 .control__input:disabled + .control__mark,

@@ -13,3 +13,20 @@ navToggle.addEventListener('click', function () {
     navToggle.classList.remove('header-navigation__toggle--open');
   }
 });
+
+function initMap() {
+  // The location of CatEnergy
+  var markerPath = "../img/map/marker-mobile@1x.png";
+  const positionCat = { lat: 59.938751949263754, lng: 30.323061521022623 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 16,
+    center: positionCat,
+  });
+  const marker = new google.maps.Marker({
+    position: positionCat,
+    map: map,
+    icon: markerPath,
+  });
+}
+
+window.initMap = initMap;
