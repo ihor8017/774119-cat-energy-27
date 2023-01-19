@@ -1,9 +1,48 @@
-.partner {
+.partner__academy {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: center;
+  width: 280px;
+}
+
+.partner__academy:hover .logo__academia-image {
+  color: #68b738;
+}
+
+.partner__academy:hover .partner__text-link {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.partner__academy:active .logo__academia-image {
+  opacity: 0.3;
+}
+
+.partner__academy:active .partner__text-link {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.partner__item-link::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+}
+
+.partner__item-link:focus {
+  outline: none;
+}
+
+.partner__item-link:focus.partner__item-link::before {
+  border: 3px solid #000000;
+  border-radius: 5px;
 }
 
 .partner__item-link {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 19px;
@@ -11,7 +50,8 @@
 }
 
 @media (min-width: @tablet-width) {
-  .partner {
+  .partner__academy {
     justify-content: flex-end;
+    width: max-content;
   }
 }

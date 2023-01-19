@@ -25,6 +25,24 @@
   opacity: 0.3;
 }
 
+.logo__image::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+}
+
+.logo__image:focus.logo__image::before {
+  border: 3px solid #000000;
+  border-radius: 5px;
+}
+
+.logo__image:focus {
+  outline: none;
+}
+
 @media (min-width: @tablet-width) {
   .logo__academia-image {
     margin-left: 27px;
@@ -32,5 +50,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  margin-left: 30px;
+  .logo__academia-image {
+    margin-left: 30px;
+  }
 }

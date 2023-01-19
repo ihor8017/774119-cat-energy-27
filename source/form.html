@@ -4,13 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldmedium.woff" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <nav class="header-navigation header-navigation--closed">
+      <nav class="header-navigation">
         <a class="header-navigation__logo logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
@@ -21,7 +26,7 @@
         <a class="header-navigation__logo logo" href="index.html">
           <img class="header-navigation__logo-text" src="img/logo/logo-text.svg" alt="Cat energy." width="101" height="18">
         </a>
-        <button class="header-navigation__toggle" type="button">
+        <button class="header-navigation__toggle  header-navigation__toggle--closed" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="header_navigation__list site-list">
@@ -139,7 +144,7 @@
           <p class="address__slogan">приглашаем <span>к сотрудничеству</span> дилеров!</p>
           <address class="address__place">ул. Большая <span class="address__divider">Конюшенная, д. 19/8 </span><span class="adress__divider">Санкт-Петербург</span></address>
         </div>
-        <div class="address__map">
+        <div class="address__map" id="map">
           <span class="visually-hidden">местоположение магазина на карте</span>
         </div>
       </section>
@@ -170,6 +175,7 @@
           </a>
         </div>
         <div class="footer-items__item partner">
+          <div class="partner__academy">
             <a class="partner__item-link logo link" href="https://htmlacademy.ru/">
               <span>HTML Academy</span>
             </a>
@@ -178,8 +184,14 @@
                 <use xlink:href="img/sprite.svg#html-academy-image"></use>
               </svg>
             </a>
+          </div>
         </div>
       </div>
     </footer>
+    <script type="module" src="js/script.min.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAO-qcSioFYo_4IkWc4Bzw3E2jvtRzJQj4&callback=initMap&v=weekly"
+      defer
+    ></script>
   </body>
 </html>

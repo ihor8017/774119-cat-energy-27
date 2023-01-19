@@ -5,6 +5,7 @@ import postcss from 'gulp-postcss';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
+import jsmin from 'gulp-jsmin';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import {deleteAsync} from 'del';
@@ -38,13 +39,15 @@ const html = () => {
 
 // Scripts
 
-const scripts = () => {
+export const scripts = () => {
   return gulp.src('source/js/script.js')
+  .pipe(jsmin())
+  .pipe(rename('script.min.js'))
   .pipe(gulp.dest('build/js'))
   .pipe(browser.stream());
   }
 
-// Images 
+// Images
 
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
@@ -75,11 +78,11 @@ const svg = () => {
   .pipe(gulp.dest('build/img'));
 }
 
-export const sprite = () => {
+const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
   .pipe(svgo())
-  .pipe(svgstore({ 
-    inlineSvg: true 
+  .pipe(svgstore({
+    inlineSvg: true
   }))
   .pipe(rename('sprite.svg'))
   .pipe(gulp.dest('build/img'));
@@ -97,7 +100,7 @@ const copy = (done) => {
     })
     .pipe(gulp.dest('build'))
     done();
-    }  
+    }
 
 //Clean
 
@@ -130,7 +133,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
-  //gulp.watch('source/js/*.js', gulp.series(scripts));
+  gulp.watch('source/js/*.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
@@ -144,7 +147,7 @@ export const build = gulp.series(
   gulp.parallel(
   styles,
   html,
-  //scripts,
+  scripts,
   sprite,
   createWebp
 ));
@@ -157,7 +160,7 @@ export default gulp.series(
   gulp.parallel(
   styles,
   html,
-  //scripts,
+  scripts,
   sprite,
   createWebp
   ),

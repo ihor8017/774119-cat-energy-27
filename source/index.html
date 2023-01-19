@@ -4,13 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="img/background/background-header-mobile@2x.webp" as="image">
+    <link rel="preload" href="img/background/background-header-tablet@2x.webp" as="image">
+    <link rel="preload" href="img/background/background-header-desktop@2x.webp" as="image">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <header class="main-header main-header--background">
-      <nav class="header-navigation header-navigation--closed">
+      <nav class="header-navigation">
         <a class="header-navigation__logo logo" href="index.html" aria-current="page">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
@@ -21,10 +29,10 @@
         <a class="header-navigation__logo logo" href="index.html">
           <img class="header-navigation__logo-text" src="img/logo/logo-text.svg" alt="Cat energy." width="101" height="18">
         </a>
-        <button class="header-navigation__toggle" type="button">
+        <button class="header-navigation__toggle header-navigation__toggle--closed" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="header_navigation__list site-list">
+        <ul class="header_navigation__list">
           <li class="header-navigation__item header-navigation__item--current-item">
             <a class="header-navigation__link link header-navigation__link--current link--current-colored" href="index.html">Главная</a>
           </li>
@@ -39,8 +47,11 @@
       <h1 class="main-header__title">Функциональное <span class="main-header__divider">питание для котов</span></h1>
       <p class="main-header__slogan">Занялся собой? Займись котом!</p>
       <picture>
+        <source type="image/webp" media="(min-width: 1440px)" srcset="img/header/index-cat-dekstop@1x.webp 1x, img/header/index-cat-dekstop@2x.webp 2x">
         <source media="(min-width: 1440px)" srcset="img/header/index-cat-dekstop@1x.png 1x, img/header/index-cat-dekstop@2x.png 2x">
+        <source  type="image/webp" media="(min-width: 768px)" srcset="img/header/index-cat-tablet@1x.webp 1x, img/header/index-cat-tablet@2x.webp 2x">
         <source media="(min-width: 768px)" srcset="img/header/index-cat-tablet@1x.png 1x, img/header/index-cat-tablet@2x.png 2x">
+        <source type="image/webp" srcset="img/header/index-cat-mobile@1x.webp 1x, img/header/index-cat-mobile@2x.webp 2x">
         <img class="main-header__image" src="img/header/index-cat-mobile@1x.png" srcset="img/header/index-cat-mobile@2x.png 2x" alt="Баночка с  едой cat pro energy, курица, 500 грамм." width="280" height="270">
       </picture>
       <a class="main-header__button button" href="form.html">подобрать программу</a>
@@ -92,24 +103,25 @@
           <div class="example_slider slider">
             <div class="slider__image-wrapper">
               <picture>
+                <source  type="image/webp" media="(min-width: 768px)" srcset="img/slider/fat-cat-tablet@1x.webp 1x, img/slider/fat-cat-tablet@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/slider/fat-cat-tablet@1x.png 1x, img/slider/fat-cat-tablet@2x.png 2x">
-                <img class="slider__image-fat" src="img/slider/fat-cat-mobile_1x.webp" srcset="img/slider/fat-cat-mobile@2x.png 2x" alt="Толстый кот" width="280" height="256">
+                <source  type="image/webp" srcset="img/slider/fat-cat-mobile@1x.webp 1x, img/slider/fat-cat-mobile@2x.webp 2x">
+                <img class="slider__image-fat" src="img/slider/fat-cat-mobile@1x.png" srcset="img/slider/fat-cat-mobile@2x.png 2x" alt="Толстый кот" width="280" height="256">
               </picture>
             </div>
             <button class="slider__divider" type="button">
-              <svg class="slider__divider-bar" role="img" aria-label="ползунок разделяющий фотографии кота до и после диеты " width="40" height="258"  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <rect x="18" width="4" height="257.02" rx="2" />
-                <rect x="1" y="110" width="38" height="38" rx="19" stroke-width="2"/>
-                <rect x="1" y="110" width="38" height="38" rx="19" fill="white"/>
-                <path d="M16 120L8 129L16 138V120Z" />
-                <path d="M32 129L24 120V138L32 129Z" />
-                </svg>
+              <svg class="slider__divider-bar" role="img" aria-label="ползунок разделяющий фотографии кота до и после диеты " width="40" height="258" >
+                <use xlink:href="img/sprite.svg#slider-big"></use>
+                <use xlink:href="img/sprite.svg#slider"></use>
+              </svg>
             </button>
             <span class="visually-hidden">Разделитель фотографий</span>
             <div class="slider__image-wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/slim-cat-tablet@1x.webp 1x, img/slider/slim-cat-tablet@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/slider/slim-cat-tablet@1x.png 1x, img/slider/slim-cat-tablet@2x.png 2x">
-                <img class="slider__image-slim" src="img/slider/slim-cat-mobile_1x.webp" srcset="img/slider/slim-cat-mobile@2x.png 2x" alt="Худой кот" width="280" height="256">
+                <source type="image/webp" srcset="img/slider/slim-cat-mobile@1x.webp 1x, img/slider/slim-cat-mobile@2x.webp 2x">
+                <img class="slider__image-slim" src="img/slider/slim-cat-mobile@1x.png" srcset="img/slider/slim-cat-mobile@2x.png 2x" alt="Худой кот" width="280" height="256">
               </picture>
             </div>
           </div>
@@ -123,7 +135,7 @@
           <p class="address__slogan">приглашаем <span>к сотрудничеству</span> дилеров!</p>
           <address class="address__place">ул. Большая <span class="address__divider">Конюшенная, д. 19/8 </span><span class="adress__divider">Санкт-Петербург</span></address>
         </div>
-        <div class="address__map">
+        <div class="address__map" id="map">
           <span class="visually-hidden">местоположение магазина на карте</span>
         </div>
       </section>
@@ -154,16 +166,23 @@
           </a>
         </div>
         <div class="footer-items__item partner">
-            <a class="partner__item-link logo link" href="https://htmlacademy.ru/">
-              <span>HTML Academy</span>
-            </a>
-            <a class="partner__item-link logo__image link" href="https://htmlacademy.ru/">
-              <svg class="logo__academia-image" role="img" aria-label="Логотип HTML Academy" width="27" height="34">
-                <use xlink:href="img/sprite.svg#html-academy-image"></use>
-              </svg>
-            </a>
+            <div class="partner__academy">
+              <a class="partner__item-link link" href="https://htmlacademy.ru/">
+                <span class="partner__text-link">HTML Academy</span>
+              </a>
+              <a class="partner__item-link logo__image link" href="https://htmlacademy.ru/">
+                <svg class="logo__academia-image" role="img" aria-label="Логотип HTML Academy" width="27" height="34">
+                  <use xlink:href="img/sprite.svg#html-academy-image"></use>
+                </svg>
+              </a>
+            </div>
         </div>
       </div>
     </footer>
+    <script type="module" src="js/script.min.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAO-qcSioFYo_4IkWc4Bzw3E2jvtRzJQj4&callback=initMap&v=weekly"
+      defer
+    ></script>
   </body>
 </html>

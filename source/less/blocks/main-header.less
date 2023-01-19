@@ -8,16 +8,14 @@
 
 .main-header--background {
   position: relative;
-  background-image: url("../img/background/background-header-mobile@1x.jpg");
+  background-image: image-set(
+    url("../img/background/background-header-mobile@2x.webp") type("image/webp") 2x,
+    url("../img/background/background-header-mobile@1x.webp") type("image/webp") 1x,
+    url("../img/background/background-header-mobile@2x.jpg") 2x,
+    url("../img/background/background-header-mobile@1x.jpg") 1x
+    );
   background-repeat: no-repeat;
   background-position-y: 65px;
-}
-
-@media (min-resolution: 2dppx) {
-  .main-header--background {
-    background-image: url("../img/background/background-header-mobile@2x.jpg");
-    background-size: 320px auto;
-  }
 }
 
 .main-header__image {
@@ -39,8 +37,8 @@
 .main-header__title {
   margin: 0;
   margin-bottom: 25px;
-  padding-top: 42px;
-  font-family: "Oswald", sans-serif;
+  padding-top: 33px;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-size: 36px;
   line-height: 36px;
@@ -50,7 +48,7 @@
 
 .main-header__slogan {
   margin-bottom: 28px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 14px;
@@ -66,7 +64,7 @@
   }
 
   .main-header--background {
-    background: none;
+    background-image: none;
   }
 
   .main-header--background::before {
@@ -115,16 +113,14 @@
   }
 
   .main-header--background {
-    background-image: url("/img/background/background-header-desktop@1x.jpg");
+    background-image: image-set(
+      url("/img/background/background-header-desktop@2x.webp") type("image/webp") 2x,
+      url("/img/background/background-header-desktop@1x.webp") type("image/webp") 1x,
+      url("/img/background/background-header-desktop@2x.jpg") 2x,
+      url("/img/background/background-header-desktop@1x.jpg")
+    );
     background-repeat: no-repeat;
     background-position-x: 720px;
-  }
-
-  @media (min-resolution: 2dppx) {
-    .main-header--background {
-      background-image: url("/img/background/background-header-desktop@2x.jpg");
-      background-size: 720px auto;
-    }
   }
 
   .main-header--background::before {

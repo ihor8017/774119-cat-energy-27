@@ -20,7 +20,7 @@
 .card__title {
   margin: 0;
   padding-bottom: 14px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -54,6 +54,15 @@
   margin-bottom: 23px;
   background: url("../img/plus.svg") center no-repeat;
   border: none;
+}
+
+.card__add-button:hover {
+  opacity: 0.6;
+}
+
+.card__add-button:active,
+.card__add-button:disabled {
+  opacity: 0.3;
 }
 
 .card--add-product {
