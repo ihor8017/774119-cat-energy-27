@@ -1,7 +1,7 @@
 .partner__academy {
   position: relative;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 280px;
@@ -41,6 +41,14 @@
   border-radius: 5px;
 }
 
+.partner__item-link:focus.partner__item-link::before {
+  border: none;
+}
+
+.partner__item-link:active.partner__item-link::before  {
+  border: none;
+}
+
 .partner__item-link {
   font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
@@ -51,6 +59,7 @@
 
 @media (min-width: @tablet-width) {
   .partner__academy {
+    margin-left: auto;
     justify-content: flex-end;
     width: max-content;
   }

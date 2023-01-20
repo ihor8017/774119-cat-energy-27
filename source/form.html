@@ -9,9 +9,8 @@
     <link rel="icon" href="favicon.ico">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/lato/Lato-Regular.woff" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/oswald/oswaldmedium.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -52,15 +51,15 @@
               <h2 class="visually-hidden">Данные кота</h2>
               <label class="field-group__item">
                 <span class="field-group__text">ИМЯ:*</span>
-                <input class="field-group__input input" type="text" name="name" value="Барсик" required>
+                <input class="field-group__input input" type="text" name="name" value="Барсик" placeholder="Барсик" required>
               </label>
               <label class="field-group__item">
                 <span class="field-group__text">Вес (кг):*</span>
-                <input class="field-group__input input" type="number" name="name" value="7" required>
+                <input class="field-group__input input" type="number" name="name" value="7" placeholder="7" required>
               </label>
               <label class="field-group__item">
                 <span class="field-group__text">Возраст (лет):</span>
-                <input class="field-group__input input" type="number" name="name" value="7">
+                <input class="field-group__input input" type="number" name="name" value="7" placeholder="7">
               </label>
             </div>
             <div class="questionnaire__data-cat field-group">
@@ -88,12 +87,12 @@
               <div class="field-group--contacts-wrapper">
                 <label class="field-group__item">
                   <span class="field-group__text">E-mail:*</span>
-                  <input class="field-group__input input" type="email" name="email" value="kuklachev@gmail.com" required>
+                  <input class="field-group__input input" type="email" name="email" value="kuklachev@gmail.com" placeholder="kuklachev@gmail.com" required>
                   <span class="field-group__icon-email"></span>
                 </label>
                 <label class="field-group__item">
                   <span class="field-group__text">Телефон:*</span>
-                  <input class="field-group__input input" type="tel" name="phone" value="8 (960) 900-60-90" required>
+                  <input class="field-group__input input" type="tel" name="phone" value="8 (960) 900-60-90" placeholder="8 (960) 900-60-90" required>
                   <span class="field-group__icon-phone"></span>
                 </label>
               </div>
@@ -176,8 +175,8 @@
         </div>
         <div class="footer-items__item partner">
           <div class="partner__academy">
-            <a class="partner__item-link logo link" href="https://htmlacademy.ru/">
-              <span>HTML Academy</span>
+            <a class="partner__item-link link" href="https://htmlacademy.ru/">
+              <span class="partner__text-link">HTML Academy</span>
             </a>
             <a class="partner__item-link logo__image link" href="https://htmlacademy.ru/">
               <svg class="logo__academia-image" role="img" aria-label="Логотип HTML Academy" width="27" height="34">

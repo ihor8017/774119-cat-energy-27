@@ -43,6 +43,16 @@
   outline: none;
 }
 
+.logo__image:focus-visible.logo__image::before {
+  border: none;
+}
+
+.logo__image:focus.logo__image::before {
+  border: none;
+}
+
+
+
 @media (min-width: @tablet-width) {
   .logo__academia-image {
     margin-left: 27px;
