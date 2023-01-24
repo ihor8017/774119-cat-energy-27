@@ -32,6 +32,10 @@
 }
 
 .partner__item-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 280px;
   font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-size: 16px;
@@ -39,9 +43,17 @@
   color: #444444;
 }
 
+.partner__text-link{
+  align-self: center;
+}
+
 @media (min-width: @tablet-width) {
   .partner {
     justify-content: flex-end;
+    width: max-content;
+  }
+
+  .partner__item-link {
     width: max-content;
   }
 }
