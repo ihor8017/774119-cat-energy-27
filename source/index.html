@@ -31,7 +31,7 @@
         <button class="header-navigation__toggle header-navigation__toggle--closed" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="header_navigation__list">
+        <ul class="header-navigation__list">
           <li class="header-navigation__item header-navigation__item--current-item">
             <a class="header-navigation__link link header-navigation__link--current link--current-colored" href="index.html">Главная</a>
           </li>
@@ -60,7 +60,7 @@
         <div class="nutrition__wrapper">
           <h2 class="visually-hidden">Каталоги диет</h2>
           <ul class="nutrition__catalogs-list catalogs-list">
-            <li class="catalog-list__item catalogs-item catalogs-item--slim">
+            <li class="catalogs-list__item catalogs-item catalogs-item--slim">
               <h3 class="catalogs-item__title">Похудение</h3>
               <p class="catalogs-item__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a class="catalogs-item__link link" href="#">каталог slim</a>
@@ -73,8 +73,8 @@
           </ul>
         </div>
       </section>
-      <section class="fuctionality">
-          <h2 class="fuctionality__title">Как это работает</h2>
+      <section class="functionality">
+          <h2 class="functionality__title">Как это работает</h2>
           <ul class="functionality__list">
             <li class="functionality__item functionality__item--margin functionality__item--nutrients">
               <p class="functionality__description functionality__description--nutrients">Функциональное питание содержит только полезные питательные вещества.</p>
@@ -95,11 +95,11 @@
           <h2 class="example__title">Живой пример</h2>
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат <span>без изнуряющих тренировок! При этом он не менял своих</span> привычек и по-прежнему спит по 16 часов в день.</p>
           <div class="example__result-wrapper">
-            <p class="example__result">5 кг <span class="example__result--small">снижение веса</span></p>
-            <p class="example__result">60 дней <span class="example__result--small">затрачено времени</span></p>
+            <p class="example__result">5 кг <span class="example__result-small">снижение веса</span></p>
+            <p class="example__result">60 дней <span class="example__result-small">затрачено времени</span></p>
           </div>
           <p class="example__expense">Затраты на питание: <span class="example__expense-divider">15 000 РУБ.</span> </p>
-          <div class="example_slider slider">
+          <div class="example__slider slider">
             <div class="slider__image-wrapper">
               <picture>
                 <source  type="image/webp" media="(min-width: 768px)" srcset="img/slider/fat-cat-tablet@1x.webp 1x, img/slider/fat-cat-tablet@2x.webp 2x">
@@ -132,7 +132,7 @@
         <h2 class="visually-hidden">Адрес магазина</h2>
         <div class="address__wrapper">
           <p class="address__slogan">приглашаем <span>к сотрудничеству</span> дилеров!</p>
-          <address class="address__place">ул. Большая <span class="address__divider">Конюшенная, д. 19/8 </span><span class="adress__divider">Санкт-Петербург</span></address>
+          <address class="address__place">ул. Большая <span class="address__divider">Конюшенная, д. 19/8 </span><span class="address__divider">Санкт-Петербург</span></address>
         </div>
         <div class="address__map" id="map">
           <span class="visually-hidden">местоположение магазина на карте</span>
@@ -164,8 +164,7 @@
             <span class="visually-hidden">Телеграм</span>
           </a>
         </div>
-        <div class="footer-items__item partner">
-            <div class="partner__academy">
+        <div class="footer-items__item partner logo">
               <a class="partner__item-link link" href="https://htmlacademy.ru/">
                 <span class="partner__text-link">HTML Academy</span>
               </a>
@@ -174,8 +173,7 @@
                   <use xlink:href="img/sprite.svg#html-academy-image"></use>
                 </svg>
               </a>
-            </div>
-        </div>
+            </div>   
       </div>
     </footer>
     <script type="module" src="js/script.min.js"></script>

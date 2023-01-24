@@ -1,7 +1,0 @@
-.catalogs-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-.catalogs-list__item {
-  background-color: #F2F2F2;
-}

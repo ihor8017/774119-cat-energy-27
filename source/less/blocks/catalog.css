@@ -1,9 +1,0 @@
-.catalog {
-  display: grid;
-}
-.catalog__item {
-  display: grid;
-  padding: 20px 20px 25px;
-  border-top: 1px solid #EBEBEB;
-  border-bottom: 1px solid #EBEBEB;
-}

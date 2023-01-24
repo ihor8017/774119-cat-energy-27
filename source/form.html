@@ -28,7 +28,7 @@
         <button class="header-navigation__toggle  header-navigation__toggle--closed" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="header_navigation__list site-list">
+        <ul class="header-navigation__list site-list">
           <li class="header-navigation__item">
             <a class="header-navigation__link link" href="index.html">Главная</a>
           </li>
@@ -64,7 +64,7 @@
             </div>
             <div class="questionnaire__data-cat field-group">
               <h2 class="visually-hidden">Тип программы</h2>
-              <div class="field-group__wrapper--radio">
+              <div class="field-group__wrapper-radio">
                 <label class="field-group__item control">
                   <input class="field-group__input visually-hidden control__input" type="radio" name="programm" value="slim" checked>
                   <span class="control__mark"></span>
@@ -84,7 +84,7 @@
             </div>
             <div class="questionnaire__data-cat field-group field-group--contacts">
               <h2 class="field-group__title field-group__title--line">Контактные данные <span>(владельца кота)</span></h2>
-              <div class="field-group--contacts-wrapper">
+              <div class="field-group__contacts-wrapper">
                 <label class="field-group__item">
                   <span class="field-group__text">E-mail:*</span>
                   <input class="field-group__input input" type="email" name="email" value="kuklachev@gmail.com" placeholder="kuklachev@gmail.com" required>
@@ -130,7 +130,7 @@
             </div>
             <div class="questionnaire__button-wrapper">
               <button class="questionnaire__button button" type="submit">отправить заявку</button>
-              <p class="qestionnaire__info">* — Обязательные поля</p>
+              <p class="questionnaire__info">* — Обязательные поля</p>
             </div>
           </form>
         </div>
@@ -139,9 +139,9 @@
     <footer class="pages-footer">
       <section class="address">
         <h2 class="visually-hidden">Адрес магазина</h2>
-        <div class="address__wrapper address__wrapper--backgr">
+        <div class="address__wrapper">
           <p class="address__slogan">приглашаем <span>к сотрудничеству</span> дилеров!</p>
-          <address class="address__place">ул. Большая <span class="address__divider">Конюшенная, д. 19/8 </span><span class="adress__divider">Санкт-Петербург</span></address>
+          <address class="address__place">ул. Большая <span class="address__divider">Конюшенная, д. 19/8 </span><span class="address__divider">Санкт-Петербург</span></address>
         </div>
         <div class="address__map" id="map">
           <span class="visually-hidden">местоположение магазина на карте</span>
@@ -173,18 +173,16 @@
             <span class="visually-hidden">Телеграм</span>
           </a>
         </div>
-        <div class="footer-items__item partner">
-          <div class="partner__academy">
-            <a class="partner__item-link link" href="https://htmlacademy.ru/">
-              <span class="partner__text-link">HTML Academy</span>
-            </a>
-            <a class="partner__item-link logo__image link" href="https://htmlacademy.ru/">
-              <svg class="logo__academia-image" role="img" aria-label="Логотип HTML Academy" width="27" height="34">
-                <use xlink:href="img/sprite.svg#html-academy-image"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
+        <div class="footer-items__item partner logo">
+              <a class="partner__item-link link" href="https://htmlacademy.ru/">
+                <span class="partner__text-link">HTML Academy</span>
+              </a>
+              <a class="partner__item-link logo__image link" href="https://htmlacademy.ru/">
+                <svg class="logo__academia-image" role="img" aria-label="Логотип HTML Academy" width="27" height="34">
+                  <use xlink:href="img/sprite.svg#html-academy-image"></use>
+                </svg>
+              </a>
+            </div>   
       </div>
     </footer>
     <script type="module" src="js/script.min.js"></script>

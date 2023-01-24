@@ -1,39 +1,25 @@
-.partner__academy {
+.partner {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 280px;
 }
 
-.partner__academy:hover .logo__academia-image {
+.partner:hover .logo__academia-image {
   color: #68b738;
 }
 
-.partner__academy:hover .partner__text-link {
+.partner:hover .partner__text-link {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.partner__academy:active .logo__academia-image {
+.partner:active .logo__academia-image {
   opacity: 0.3;
 }
 
-.partner__academy:active .partner__text-link {
+.partner:active .partner__text-link {
   color: rgba(0, 0, 0, 0.3);
-}
-
-.partner__item-link::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  content: "";
-}
-
-.partner__item-link:focus {
-  outline: none;
 }
 
 .partner__item-link:focus.partner__item-link::before {
@@ -54,8 +40,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .partner__academy {
-    margin-left: auto;
+  .partner {
     justify-content: flex-end;
     width: max-content;
   }
