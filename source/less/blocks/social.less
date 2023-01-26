@@ -1,6 +1,5 @@
 .social {
   display: flex;
-  padding-left: 44px;
 }
 
 .social__item-link {
@@ -20,6 +19,12 @@
 .social__item-link:active {
   color: #68b738;
   opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    padding-left: 44px;
+  }
 }
 
 @media (min-width: @desktop-width) {
